@@ -13,7 +13,7 @@ Surfaces](https://archive.org/details/geometryofsurfac0000stil/page/n235/mode/2u
 - Borelli tells me that
 [Topologicon](https://permamath.e-monsite.com/medias/files/petit-jean-pierre-le-topologicon.pdf) is very amusing and informative.
 
-1. [Introduction](./intro.html)
+1. [Introduction](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/intro.html)
 1. Simplicial complexes
 2. Homotopy
 1. Fundamental group

@@ -1,0 +1,12 @@
+#
+
+$\gamma$ est un cercle de centre l'origine
+
+- $\gamma(t) = R(\cos(t),\sin(t))$ pour $t \in [0,2\pi]$, 
+- $\gamma'(t) = (\dot{x},\dot{y}) = R(-\sin(t),\cos(t))$ 
+
+
+$$\frac{d}{dt}\theta(t) =  \frac{x \dot{y} - y \dot{x}}{x^2 + y^2} =
+\frac{\cos^2(t) + \sin^2(t)}{\cos^2(t) + \sin^2(t)}$$
+
+
