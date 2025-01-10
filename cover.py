@@ -3,7 +3,7 @@ import plotly.figure_factory as ff
 import numpy as np
 from scipy.spatial import Delaunay
 
-turns = 5
+turns = 8
 
 u = np.linspace(0, turns*2*np.pi, turns*24)
 v = np.linspace(1,2,10)

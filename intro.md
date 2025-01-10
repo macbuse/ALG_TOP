@@ -64,7 +64,7 @@ greg mc shane
 # La mauvaise réponse de la maitresse
 
 - [caractéristique d'Euler](https://analysis-situs.math.cnrs.fr/-Caracteristique-d-Euler-Poincare-92-.html)
-- **solides de platoniciens** avec les éléments classiques selon le *Timée* de Platon   
+- **solides de Platon** avec les éléments classiques selon le *Timée* de Platon   
 
 [the 5 elements according to the Timaeus](https://en.wikipedia.org/wiki/Timaeus_(dialogue)#The_elements)
 
@@ -83,6 +83,25 @@ greg mc shane
 - **L’éther** (ou **aether**) était souvent considéré comme le « cinquième élément » ou la **quintessence**, représentant la substance des sphères célestes et du divin.  
 - Le **nombre de faces** et leurs propriétés symétriques rendaient ces solides uniques et leur donnaient des correspondances avec les caractéristiques des éléments.  
 - Le **dodécaèdre** était particulièrement mystique pour les Grecs, car il symbolisait l’ensemble du cosmos.
+
+# Viruses
+
+To maximise its information, the volume of the protective capsid must be as large as possible, and must be formed by just a few different proteins  and clusters of them are distributed over the polyhedral capsid, as symmetric as possible.
+
+This insight led Watson and Crick to the ‘genetic economy’-proposal that most sphere-like viruses will have an icosahedral capsid because the icosahedron is the Platonic solid with the largest volume and rotational symmetry group. They argued that the capsid is most likely constructed from a single subunit (capsomere), which is repeated many times to form the protein shell.
+
+[Viruses](http://www.neverendingbooks.org/gov-1-geometry-of-viruses/)
+
+# 
+- **Définition** Un polyèdre convexe est un **solide de Platon** 
+si et seulement si
+
+1. Toutes ses faces sont des polygones réguliers convexes isométriques
+1. Aucune de ses faces ne se coupe, excepté sur les arêtes
+1. Le même nombre de faces se rencontre à chacun de ses sommets.
+
+<!-- - p = le nombre de côtés de chaque face (ou le nombre de sommets sur chaque face) et -->
+<!-- - q = le nombre de faces se rencontrant à chaque sommet (ou le nombre d'arêtes se rencontrant à chaque sommet). -->
 
 
 #
