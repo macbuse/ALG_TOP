@@ -53,14 +53,37 @@ greg mc shane
 
 <!-- # -->
 <!-- <!-1- _transition: cube -1-> -->
-<!-- - slides : google **greg mcshane github** -->
-<!-- - click on **serfest** -->
-<!-- - if there is a bug in my slides blame [this guy](https://github.com/yhatt) -->
+
+# Plan
+
+- [Caractéristique d'Euler](#caractéristique-d'Euler)
+- Indice d'un point par rapport à un lacet
+- Revetements
+- Groupes, homologie et homotopie
 
 # La mauvaise réponse de la maitresse
 
 - [caractéristique d'Euler](https://analysis-situs.math.cnrs.fr/-Caracteristique-d-Euler-Poincare-92-.html)
-- [indice d'un point par rapport à un lacet](https://www.youtube.com/watch?v=9e4vzj3J9u0)
+- **solides de platoniciens** avec les éléments classiques selon le *Timée* de Platon   
+
+[the 5 elements according to the Timaeus](https://en.wikipedia.org/wiki/Timaeus_(dialogue)#The_elements)
+
+
+# 
+
+| **Solide**     | **Élément**    | **Description**                                              | **Faces** | **Faces**       | 
+|--------------------------|----------------|--------------------------------------------------------------|-----------|---------------------------|
+| **Tétraèdre**             | Feu            | Pointu et énergique                 | 4         | Triangle équilatéral       | Transformation, énergie et chaleur             |
+| **Cube (Hexaèdre)**       | Terre          | Solide et immuable | 6         | Carré                      |
+| **Octaèdre**              | Air            | Léger, mobile,  | 8         | Triangle équilatéral       | 
+| **Icosaèdre**             | Eau            | Fluide, coulant et adaptable | 20        | Triangle équilatéral       | 
+| **Dodécaèdre**            | Éther (ou Cosmos) | Représentant l’univers et les cieux                        | 12        | Pentagone régulier         | 
+
+# Notes supplémentaires :
+- **L’éther** (ou **aether**) était souvent considéré comme le « cinquième élément » ou la **quintessence**, représentant la substance des sphères célestes et du divin.  
+- Le **nombre de faces** et leurs propriétés symétriques rendaient ces solides uniques et leur donnaient des correspondances avec les caractéristiques des éléments.  
+- Le **dodécaèdre** était particulièrement mystique pour les Grecs, car il symbolisait l’ensemble du cosmos.
+
 
 #
 
@@ -79,8 +102,7 @@ greg mc shane
 
 # Caractéristique d'Euler
 
-- La caractéristique d'Euler $\chi$ est une **invariante topologique** 
-des polyèdres convexes et d'autres objets géométriques. 
+- La caractéristique d'Euler $\chi$ est une **invariante topologique** des polyèdres convexes et d'autres objets géométriques. 
 
 
 |Formule de la caractéristique d'Euler|
@@ -126,7 +148,16 @@ La caractéristique d'Euler est aussi utile pour les surfaces plus complexes, ma
 | Cube (Hexaèdre)       | 6               | 12               | 8                 |
 | Sphère (maitresse)             | 1|0|0 |
 | Sphère (ballon)             | 1|0|1 |
+| Sphère (carte)             | 2|1|1 |
 | Cercle|0|1|1|
+
+#
+
+<img src="./balloon.webp" width="600">
+
+# Craster parabolic
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Craster_parabolic_projection_SW.jpg" width="1000">
 
 
 #
@@ -180,13 +211,16 @@ $$\Rightarrow \text{indice} = \frac{1}{2\pi} \int_{0}^{2\pi} 1\, dt  = 1$$
 
 # 
 
-- Une autre expression équivalente 
-utilise la représentation complexe de la courbe 
-$$\gamma(t) = x(t) + iy(t)$$ 
+L'origine de l'indice est une lettre de Gauss à un ami, 
+le
+mathématicien allemand Bessel:
 
-$$
-\text{indice} = \frac{1}{2\pi i} \int_{a}^{b} \frac{\gamma'(t)}{\gamma(t)} \, dt
-$$
+$$\int_1^z \frac{dw}{w} = \log(z) = \log(|z|) + i\arg(z)$$
+<!-- $$\gamma(t) = x(t) + iy(t)$$ --> 
+
+<!-- $$ -->
+<!-- \text{indice} = \frac{1}{2\pi i} \int_{a}^{b} \frac{\gamma'(t)}{\gamma(t)} \, dt -->
+<!-- $$ -->
 
 <!-- où $\gamma'(t)$ désigne la dérivée de $\gamma(t)$ par rapport à $t$. -->
 
