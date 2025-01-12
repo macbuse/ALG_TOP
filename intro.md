@@ -61,12 +61,59 @@ greg mc shane
 - Revetements
 - Groupes, homologie et homotopie
 
+#
+
+## Applications continues
+
+- $X$ est un espace topologique, $Y$ est un espace topologique, $f:X \to Y$ est une application continue.
+- $f$ est **homéomorphisme** si elle est bijective et que $f$ et $f^{-1}$ sont continues.
+- $f$ est **homotope** à $g$ si il existe une application continue
+$H:X \times [0,1] \to Y$ telle que $H(x,0) = f(x)$ et $H(x,1) =
+g(x)$. 
+<!-- On note $f \simeq g$. -->
+
+- Classifier les espaces topologiques 
+    - à homéomorphisme près
+    - à homotopie près
+
+
+#
+
+### Solides de Platon
+
+- $X \subset \mathbb{R}^3$ est un solide de Platon si $X$ est convexe,
+compact et que les faces de $X$ sont des polygones réguliers
+identiques.
+
+- $f:\vec{v} \mapsto \frac{\vec{v}}{||\vec{v}||}, X \to
+\mathbb{S}^2$ est un homéomorphisme.
+
+<img src='./icos2sphere.png' width='400'>
+
+#
+
+### Indice d'un point par rapport à un lacet
+
+<!-- **Définition informelle** --> 
+= nombre de fois que le lacet s'enroule autour du point [animation](https://commons.wikimedia.org/wiki/File:Winding_Number_Animation_Small.gif?uselang=fr)
+<!-- - $X \subset \mathbb{C}^*$ est un lacet. -->
+- $\gamma_1:[0,1] \to \mathbb{C}^*, t \mapsto exp(2\pi it)$ 
+- $\gamma_2:[0,1] \to \mathbb{C}^*, t \mapsto exp(4\pi it)$
+- $\gamma_3:[0,1] \to \mathbb{C}^*, t \mapsto \exp(2\pi it) +
+1.65\cdot exp(4\pi it)$
+
+|lacet | indice de 0|
+|---|---|
+|$\gamma_1$|1 tour|
+|$\gamma_2$|2 tours|
+|$\gamma_2$|2 tours|
+
+
 # La mauvaise réponse de la maitresse
 
 - [caractéristique d'Euler](https://analysis-situs.math.cnrs.fr/-Caracteristique-d-Euler-Poincare-92-.html)
-- **solides de Platon** avec les éléments classiques selon le *Timée* de Platon   
-
-[the 5 elements according to the Timaeus](https://en.wikipedia.org/wiki/Timaeus_(dialogue)#The_elements)
+- **solides de Platon** et les éléments classiques selon le *Timée* de Platon   
+- [the 5 elements according to the Timaeus](https://en.wikipedia.org/wiki/Timaeus_(dialogue)#The_elements)
 
 
 # 
@@ -96,9 +143,12 @@ This insight led Watson and Crick to the ‘genetic economy’-proposal that mos
 - **Définition** Un polyèdre convexe est un **solide de Platon** 
 si et seulement si
 
-1. Toutes ses faces sont des polygones réguliers convexes isométriques
-1. Aucune de ses faces ne se coupe, excepté sur les arêtes
-1. Le même nombre de faces se rencontre à chacun de ses sommets.
+1. Toutes ses faces sont des polygones 
+réguliers convexes isométriques
+1. Aucune de ses faces ne se coupe, 
+excepté sur les arêtes
+1. Le même nombre de faces se rencontre 
+à chacun de ses sommets.
 
 <!-- - p = le nombre de côtés de chaque face (ou le nombre de sommets sur chaque face) et -->
 <!-- - q = le nombre de faces se rencontrant à chaque sommet (ou le nombre d'arêtes se rencontrant à chaque sommet). -->
