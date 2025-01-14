@@ -61,6 +61,19 @@ greg mc shane
 - Revetements
 - Groupes, homologie et homotopie
 
+# 
+
+### Acquis
+
+- sphère $\mathbb{S}^n = \{\vec{x} = (x_0\dots x_n) , \|\vec{x}\| = 1  \} \subset \mathbb{R}^{n+1}$
+
+- $\gamma:[0,1] \to \mathbb{C}^*$  courbe paramétrée
+- $\gamma(t) = x(t) + iy(t)$
+- $\gamma'(t) = \dot{x}(t) + i\dot{y}(t)$ vecteur tangent
+- lacet ssi $\gamma(0) = \gamma(1)$
+
+
+
 #
 
 ## Applications continues
@@ -385,4 +398,9 @@ Montrer que $P : \mathbb{C} \to \mathbb{C}$ est surjective.
 
 4. On considere $f: z \mapsto z^2 - z + 1$ de $\mathbb{C} \to \mathbb{C}$.
     - Montrer que l'image de $\exp(it),\, t\in [0,2\pi]$ est une courbe avec un point d'auto-intersection.
+
+# Bibliographie
+
+- [prove me wrong](https://prove-me-wrong.com/mathematical-art/math-visualization-portfolio/)
+
 
