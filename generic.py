@@ -5,8 +5,6 @@ import numpy as np
 import plotly.graph_objects as go
 import json 
 
-
-
 verts = np.zeros((4,3))
 verts[1:,:] = np.identity(3)
 
@@ -14,9 +12,9 @@ faces = [[0,1,2], [0,1,3], [0,2,3], [1,2,3]]
 
 verts = np.zeros((12,3)).astype(int)
 verts[1:4,:] = np.identity(3)
-verts[5:8,:]  = -np.identity(3) 
-verts[9:,:] =  np.identity(3)
-verts[4:,:]  += [0,0,1]
+verts[5:8,:] = -np.identity(3) 
+verts[9:,:] = np.identity(3)
+verts[4:,:] += [0,0,1]
 
 ff = np.array([[0,1,2], [0,1,3], [0,2,3], [1,2,3]])
 faces = np.zeros((12,3),dtype=int)
@@ -29,6 +27,12 @@ with open('simplicial.json','w') as fp:
                'vertices': verts.tolist(),
               'faces': faces.tolist()},fp)
 
+fn = 'icosahedron.json'
+with open(fn,'r') as fp:
+    data = json.load(fp)
+
+verts = np.array(data['vertices'])
+faces = np.array(data['faces']).astype(int)
 
 # Transpose vertices for plotting
 x, y, z = verts.T
@@ -43,7 +47,7 @@ my3dmesh = go.Mesh3d( x=x, y=y, z=z,
     intensity= z,
     flatshading=True,
     showscale=False,
-    name='Simplicial Complex',
+    name=data['name'],
     # opacity=0.5
 )
 
@@ -61,9 +65,9 @@ my3dmesh.update(cmin=-7,# atrick to get a nice plot (z.min()=-3.31909)
                                  )
                       );
 
-# Plot the octahedron
+# Plot the mesh
 layout = go.Layout(
-         title="Octahedron",
+         title=data['name'],
          font=dict(size=16, color='white'),
          width=700,
          height=700,
@@ -74,5 +78,6 @@ layout = go.Layout(
        
         )
 
-fig = go.Figure(data=my3dmesh, layout=layout)
+fig = go.Figure(data=my3dmesh,
+                layout=layout)
 fig.show()

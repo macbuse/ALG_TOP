@@ -72,11 +72,21 @@ $H:X \times [0,1] \to Y$ telle que $H(x,0) = f(x)$ et $H(x,1) =
 g(x)$. 
 <!-- On note $f \simeq g$. -->
 
-- Classifier les espaces topologiques 
+- Objectif : Classifier les espaces topologiques 
     - à homéomorphisme près
     - à homotopie près
 
+#
 
+<img src='./homotopy_square.png' width='800'>
+
+#
+
+<img src='./homotopy_square_12.png' width='800'>
+
+#
+
+[Koch -> triangle homotopie](https://github.com/macbuse/koch/blob/master/tt.gif)
 #
 
 ### Solides de Platon
@@ -88,7 +98,7 @@ identiques.
 - $f:\vec{v} \mapsto \frac{\vec{v}}{||\vec{v}||}, X \to
 \mathbb{S}^2$ est un homéomorphisme.
 
-<img src='./icos2sphere.png' width='400'>
+<img src='./icos2sphere.png' width='600'>
 
 #
 
@@ -100,7 +110,7 @@ identiques.
 - $\gamma_1:[0,1] \to \mathbb{C}^*, t \mapsto exp(2\pi it)$ 
 - $\gamma_2:[0,1] \to \mathbb{C}^*, t \mapsto exp(4\pi it)$
 - $\gamma_3:[0,1] \to \mathbb{C}^*, t \mapsto \exp(2\pi it) +
-1.65\cdot exp(4\pi it)$
+3\cdot exp(4\pi it)$
 
 |lacet | indice de 0|
 |---|---|
@@ -207,7 +217,7 @@ En appliquant la formule :  $\chi = S - F+ A = 8 - 12 + 6 = 2$
 | **Dodécaèdre** | $\chi = 20 - 30 + 12 = 2$  |
 | **Icosaèdre** | $\chi = 12 - 30 + 20 = 2$  |
 
-La caractéristique d'Euler est aussi utile pour les surfaces plus complexes, mais sa valeur peut varier en fonction de la topologie <br> (par exemple, pour un tore, $\chi = 0$
+La caractéristique d'Euler est aussi utile pour les surfaces plus complexes, mais sa valeur peut varier en fonction de la topologie <br> (par exemple, pour un tore, $\chi = 0$)
 
 
 # L'erreur de la maitresse
@@ -259,9 +269,15 @@ $$\text{indice} = \frac{1}{2\pi} \int_{\gamma} \frac{x \, dy - y \, dx}{x^2 + y^
 
 où $\theta(t) = \tan^{-1}\left(\frac{y(t)}{x(t)}\right)$ est l’angle polaire du point $(x(t), y(t))$.
 
-$$\frac{d}{dt}\theta(t) =\frac{d}{dt} \tan^{-1}\left(\frac{y(t)}{x(t)}\right) =  \frac{x \dot{y} - y \dot{x}}{x^2 + y^2}$$
+$$\frac{d}{dt}\theta(t) =\frac{d}{dt} \tan^{-1}
+\left(\frac{y(t)}{x(t)}\right) 
+= \frac{\left(\frac{y(t)}{x(t)}\right)' }{1 + \left(\frac{y(t)}{x(t)}\right)^2}
+
+=  \frac{x \dot{y} - y \dot{x}}{x^2 + y^2}$$
 
 #
+
+### Exemple : cercle de rayon $R$
 
 - $\gamma$ est un cercle de centre l'origine, de rayon $R>0$
 - $\gamma(t) = R(\cos(t),\sin(t))$ pour $t \in [0,2\pi]$, 
@@ -280,11 +296,12 @@ $$\Rightarrow \text{indice} = \frac{1}{2\pi} \int_{0}^{2\pi} 1\, dt  = 1$$
 
 # 
 
-L'origine de l'indice est une lettre de Gauss à un ami, 
-le
+L'origine de l'indice est une lettre de Gauss à un ami, le
 mathématicien allemand Bessel:
 
-$$\int_1^z \frac{dw}{w} = \log(z) = \log(|z|) + i\arg(z)$$
+$$x\in \mathbb{R}_+,\, \int_1^x \frac{du}{u} = \log(x) \text{ et }
+\exp(\log(x)) = x $$
+$$z\in \mathbb{C}^*,\,\int_1^z \frac{dw}{w} = \log(z) = \log(|z|) + i\arg(z)$$
 <!-- $$\gamma(t) = x(t) + iy(t)$$ --> 
 
 <!-- $$ -->
@@ -294,3 +311,78 @@ $$\int_1^z \frac{dw}{w} = \log(z) = \log(|z|) + i\arg(z)$$
 <!-- où $\gamma'(t)$ désigne la dérivée de $\gamma(t)$ par rapport à $t$. -->
 
 Cette dernière forme est souvent utilisée en analyse complexe. Elle calcule combien de fois la courbe entoure l’origine en intégrant la dérivée logarithmique de la fonction complexe le long de la courbe.
+
+
+#
+
+
+$$z\in \mathbb{C}^*,\,\int_1^z \frac{dw}{w} = \log(z) = \log(|z|) + i\arg(z)$$
+
+- Gauss comprend que l’intégrale,
+le logarithme complexe $\log z$, est multivaluée. 
+Ceci contraste avec son inverse $\exp(z)$ qui est définie de façon univoque.
+- Le graphe de $\arg z$ est un **revetement** de $\mathbb{C}^*$.
+<!-- - Le graphes de $\log z$ est une surface de Riemann, un **revetement** de $\mathbb{C}^*$. -->
+
+
+# 
+
+## D'Alembert Gauss
+
+<!-- - **D'Alembert** a démontré que l'indice est un entier. -->
+<!-- - **Gauss** a démontré que l'indice est un entier relatif. -->
+
+- **Théoreme :** Soit $P(z)$ un polynôme complexe non constant. 
+Alors $P$ admet une racine dans $\mathbb{C}$. 
+
+
+- Soient $P(z) = a_nz^n + \cdots + a_1z + a_0$, $R = (n-1)\cdot{\rm max}(|a_0|, \cdots, |a_{n-1}|)\cdot r^{n-1}$
+- si $a_0 = 0$, alors $0$ est une racine de $P$. On suppose que $a_0 \neq 0$ 
+- On considère le lacet $\gamma_r(t) = P(re^{2\pi it})$ pour $t \in [0,1], r\geq 0$.
+    - si $r=0$ alors $\gamma_r$ est constante et l'indice est $0$.
+    - si $r$ est suffisamment grand, alors $\gamma_r$ est une courbe fermée contenue dans un anneau $|a_n|r^n - R\leq |z| \leq |a_n|r^n + R$.
+
+#
+
+## Exemple
+
+
+- $P(z) = z^2 + z + 1$
+    - $r=0.2$ bleu clair
+    -  $r=2$ orange, 
+-  $|a_n|r^n - R\leq |z| \leq |a_n|r^n + R$
+- $1 \leq |(2 e^{it})^2 + 2 e^{it} + 1 | \leq 5$
+
+
+<!-- <img src="./gauss_dalembert.png" width="600"> -->
+![bg left](./gauss_dalembert.png)
+
+#
+
+- $r=1$ la courbe rouge 
+- $(e^{it})^2 + e^{it} + 1$
+passe par l'origine.
+
+
+![bg left](./gauss_dalembert_homotopy.png)
+
+# Exercices
+
+[deplier un cube on Wolfram](https://demonstrations.wolfram.com/UnfoldingPolyhedronNets/)
+
+1. Determiner les 4 figures qui se recollent pour former un cube.
+<img src="./cube_nets.png" width="600">
+
+1. Trouver les 11 facons de déplier un cube en un plan.
+
+<!-- [solution](https://github.com/TotallyReal/Polyhedron-Nets) -->
+
+#
+
+
+3. Soit $P(z)$ un polynôme complexe non constant. 
+Montrer que $P : \mathbb{C} \to \mathbb{C}$ est surjective.
+
+4. On considere $f: z \mapsto z^2 - z + 1$ de $\mathbb{C} \to \mathbb{C}$.
+    - Montrer que l'image de $\exp(it),\, t\in [0,2\pi]$ est une courbe avec un point d'auto-intersection.
+
