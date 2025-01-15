@@ -99,7 +99,16 @@ g(x)$.
 
 #
 
+<img src='./koch_homotopy.png' width='800'>
+
 [Koch -> triangle homotopie](https://github.com/macbuse/koch/blob/master/tt.gif)
+
+#
+
+<img src='./horned_sphere.png' width='800'>
+
+[horned sphere](https://github.com/macbuse/horned-sphere/blob/master/alexanderSphere2019.stl)
+
 #
 
 ### Solides de Platon
