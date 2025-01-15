@@ -102,26 +102,26 @@ g(x)$.
 <img src='./koch_homotopy.png' width='800'>
 
 [Koch -> triangle homotopie](https://github.com/macbuse/koch/blob/master/tt.gif)
+#
 
 
 #
 
 
-- un courbe fermée simple 
+un courbe fermée simple 
 = un lacet sans points doubles (auto-intersection)
 = plongement de $\mathbb{S}^1$ dans $\mathbb{R}^2$
 
 ### **Théorème de Jordan–Schönflies :**
-- Si $\gamma$ est une courbe fermée simple  dans le plan,
-alors le plan est divisé en exactement deux régions : 
+Si $\gamma$ est une courbe fermée simple  dans le plan, alors le plan est divisé en exactement deux régions : 
 - une **intérieure** **homéomorphe** à un disque ouvert.
-- une **extérieure** **homéomorphe** à un disque  épointé
+- une **extérieure** **homéomorphe** à un disque ouvert épointé
 
 
 
 #
 
-<img src='./horned_sphere.png' width='600'>
+<img src='./horned_sphere.png' width='800'>
 
 [horned sphere](https://github.com/macbuse/horned-sphere/blob/master/alexanderSphere2019.stl)
 
@@ -144,27 +144,17 @@ identiques.
 
 <!-- **Définition informelle** --> 
 = nombre de fois que le lacet s'enroule autour du point [animation](https://commons.wikimedia.org/wiki/File:Winding_Number_Animation_Small.gif?uselang=fr)
+<!-- - $X \subset \mathbb{C}^*$ est un lacet. -->
+- $\gamma_1:[0,1] \to \mathbb{C}^*, t \mapsto exp(2\pi it)$ 
+- $\gamma_2:[0,1] \to \mathbb{C}^*, t \mapsto exp(4\pi it)$
+- $\gamma_3:[0,1] \to \mathbb{C}^*, t \mapsto \exp(2\pi it) +
+3\cdot exp(4\pi it)$
 
-<!-- - $\gamma_1:[0,1] \to \mathbb{C}^*, t \mapsto exp(2\pi it)$ --> 
-<!-- - $\gamma_2:[0,1] \to \mathbb{C}^*, t \mapsto exp(4\pi it)$ -->
-<!-- - $\gamma_3:[0,1] \to \mathbb{C}^*, t \mapsto \exp(2\pi it) + 3\cdot exp(4\pi it)$ -->
-
-|lacet | indice de 0|
-|---|---|
-|$\gamma_1:[0,1] \to \mathbb{C}^*, t \mapsto exp(2\pi it)$ |1 tour|
-|$\gamma_2:[0,1] \to \mathbb{C}^*, t \mapsto exp(4\pi it)$|2 tours|
-|$\gamma_3:[0,1] \to \mathbb{C}^*, t \mapsto \exp(2\pi it) + 3\cdot exp(4\pi it)$|2 tours|
-
-
-#
-
-![bg right](./winding_number2.png)
 |lacet | indice de 0|
 |---|---|
 |$\gamma_1$|1 tour|
 |$\gamma_2$|2 tours|
-|$\gamma_3$|2 tours|
-
+|$\gamma_2$|2 tours|
 
 
 # La mauvaise réponse de la maitresse
