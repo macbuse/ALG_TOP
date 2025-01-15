@@ -70,36 +70,53 @@ greg mc shane
 - $\gamma:[0,1] \to \mathbb{C}^*$  courbe paramétrée
 - $\gamma(t) = x(t) + iy(t)$
 - $\gamma'(t) = \dot{x}(t) + i\dot{y}(t)$ vecteur tangent
-- lacet ssi $\gamma(0) = \gamma(1)$
+- $\gamma$ est un **lacet** ssi $\gamma(0) = \gamma(1)$
 
 
 
 #
 
-## Applications continues
+### Applications continues
 
 - $X$ est un espace topologique, $Y$ est un espace topologique, $f:X \to Y$ est une application continue.
-- $f$ est **homéomorphisme** si elle est bijective et que $f$ et $f^{-1}$ sont continues.
+- $f$ est **homéomorphisme** si elle est bijective 
+et que $f$ et son inverse $f^{-1}$ sont continues.
 - $f$ est **homotope** à $g$ si il existe une application continue
 $H:X \times [0,1] \to Y$ telle que $H(x,0) = f(x)$ et $H(x,1) =
 g(x)$. 
 <!-- On note $f \simeq g$. -->
 
-- Objectif : Classifier les espaces topologiques 
+### Objectif : Classifier les espaces topologiques 
+-
     - à homéomorphisme près
     - à homotopie près
 
 #
 
-<img src='./homotopy_square.png' width='800'>
+<!-- <img src='./homotopy_square.png' width='800'> -->
+![bg left](./homotopy_square.png)
+
+### Homeomorphisme
+
+- $f:\text{carré} \to \text{cercle}$
+- $\vec{v} \mapsto \frac{\vec{v}}{||\vec{v}||}$
 
 #
 
-<img src='./homotopy_square_12.png' width='800'>
+<!-- <img src='./homotopy_square_12.png' width='800'> -->
 
+### Homotopie
+![bg left](./homotopy_square_12.png)
+ $H: (\vec{v},t) \mapsto (1-t)\vec{v} + t \frac{\vec{v}}{||\vec{v}||}$
 #
 
-<img src='./koch_homotopy.png' width='800'>
+### Cas pathologique I
+
+
+<!-- <img src='./koch_homotopy.png' width='600'> -->
+![bg right](./koch_homotopy.png)
+
+Plongement de $\mathbb{S}^1$ dans $\mathbb{R}^2$
 
 [Koch -> triangle homotopie](https://github.com/macbuse/koch/blob/master/tt.gif)
 
@@ -117,11 +134,13 @@ alors le plan est divisé en exactement deux régions :
 - une **intérieure** **homéomorphe** à un disque ouvert.
 - une **extérieure** **homéomorphe** à un disque  épointé
 
-
-
 #
 
-<img src='./horned_sphere.png' width='600'>
+### Cas pathologique II
+<!-- <img src='./horned_sphere.png' width='600'> -->
+
+Plongement de $\mathbb{S}^2$ dans $\mathbb{R}^3$
+![bg left](./horned_sphere.png)
 
 [horned sphere](https://github.com/macbuse/horned-sphere/blob/master/alexanderSphere2019.stl)
 
@@ -159,11 +178,11 @@ identiques.
 #
 
 ![bg right](./winding_number2.png)
-|lacet | indice de 0|
-|---|---|
-|$\gamma_1$|1 tour|
-|$\gamma_2$|2 tours|
-|$\gamma_3$|2 tours|
+|lacet | indice de 0|couleur|
+|---|---|--|
+|$\gamma_1$|1 tour||
+|$\gamma_2$|2 tours| noir|
+|$\gamma_3$|2 tours| bleu|
 
 
 
