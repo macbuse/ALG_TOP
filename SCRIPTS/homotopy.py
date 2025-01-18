@@ -12,10 +12,10 @@ def P(z):
 
 
 title = "Homotopy to a circle"
-# title = "Not a homotopy to a circle"
+title = "Not a homotopy to a circle"
 Z = np.exp(1j*s)
 W = P(2*Z)
-Z = Z**2
+# Z = Z**2
 
 H = [(1-t)*W + t*Z for t in np.linspace(0,1,n_curves)]
 
