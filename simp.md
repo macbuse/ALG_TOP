@@ -115,10 +115,11 @@ qui satisfait les deux conditions suivantes :
 | Octaèdre              |                |
 | Dodécaèdre            |               | 
 | Icosaèdre             |               | 
-| Sphère             | NON             | 
+| Sphère             | OUI/NON             | 
 
 
 #
+
 ### Espaces quotients
 - On considère un espace topologique Y ainsi que relation
 d’équivalence ∼ entre les points de Y. On note

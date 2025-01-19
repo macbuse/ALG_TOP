@@ -1,11 +1,13 @@
+#! /home/macbuse/miniconda3/bin/python3.11
+
 import plotly.graph_objects as go
 import numpy as np
 
 # Generate curve data
-npts = 100
+n_pts = 10
 n_curves = 100
 
-s = np.linspace(0, 2*np.pi, npts)
+s = np.linspace(0, 2*np.pi, n_pts)
 
 def P(z):
     return z**2 + z + 1
@@ -36,7 +38,7 @@ origin = go.Scatter(x=[0], y=[0], mode="markers",
                     marker=dict(size=10, color="black"))
 
 # Create figure
-fig = go.Figure( data=[gammat, gamma0, gamma1, origin])
+fig = go.Figure(data=[gammat, gamma0, gamma1, origin])
 
 #this is the range of the plot
 xm = min(H[0].real) - 1
@@ -65,9 +67,10 @@ fig.update_layout(width=600, height=600,
 
                 )])])
 
-fig.update( frames=[go.Frame( data=[go.Scatter(x=H[k].real,
-                                               y=H[k].imag)],
-                             traces=[0]) for k in range(npts) ])
+frames=[go.Frame( data=[go.Scatter(x=H[k].real,
+                                   y=H[k].imag)],
+                       traces=[0]) for k in range(n_curves) ]
 
+fig.update(frames=frames)
 fig.show()
 fig.write_html(f"{title.replace(' ','_')}.html")
