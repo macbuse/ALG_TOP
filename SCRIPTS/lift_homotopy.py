@@ -8,7 +8,7 @@ n_pts = 10
 n_curves = 100
 
 
-T = np.linspace(0,2*np.pi,81)
+T = np.linspace(0,2*np.pi,9)
 Z = np.exp(1J*T)
 RC = 1 + .5*Z
 RL =  np.log(np.abs(RC)) + 1J*np.arctan2(RC.imag,RC.real)
@@ -39,14 +39,23 @@ origin = go.Scatter(x=[3], y=[0], mode="markers",
 gamma_hat = go.Scatter(x=HH[0].real, y=HH[0].imag, 
                      mode="lines",
                      line=dict(width=2, color="blue"))
-# Create figure
-fig = go.Figure(data=[gammat, gamma0, gamma1, origin, gamma_hat])
 
 #this is the range of the plot
 xm = -1
 xM = 6
 ym = -3.5
 yM = 3.5
+
+box = go.Scatter(x=[xm, 1, 1, xm, xm], y=[ym, ym, yM, yM, ym],
+                 fill="toself", 
+                 # color="rgba(1,0,0,0.2)",
+                 fillcolor="rgba(1,0,0,0.1)")
+
+
+# Create figure
+fig = go.Figure(data=[gammat, gamma0, gamma1, origin, gamma_hat,
+                box])
+
 
 fig.update_layout(width=700, height=700,
 

@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 import numpy as np
 
 # Generate curve data
-n_pts = 10
+n_pts = 81
 n_curves = 100
 
 s = np.linspace(0, 2*np.pi, n_pts)
@@ -14,17 +14,18 @@ def P(z):
 
 
 title = "Homotopy to a circle"
-title = "Not a homotopy to a circle"
+# title = "Not a homotopy to a circle"
 Z = np.exp(1j*s)
 W = P(2*Z)
-# Z = Z**2
+Z = 4*Z**2
+Z = 0*Z + 1
 
 H = [(1-t)*W + t*Z for t in np.linspace(0,1,n_curves)]
 
 
 gamma0 = go.Scatter(x=H[0].real, y=H[0].imag, 
                      mode="lines",
-                     line=dict(width=2, color="red"))
+                     line=dict(width=2, color="green"))
 
 gammat = go.Scatter(x=H[0].real, y=H[0].imag, 
                      mode="lines",
@@ -37,8 +38,11 @@ gamma1 = go.Scatter(x=H[n_curves-1].real, y=H[n_curves-1].imag,
 origin = go.Scatter(x=[0], y=[0], mode="markers",
                     marker=dict(size=10, color="black"))
 
+point_1 = go.Scatter(x=[1], y=[0], mode="markers",
+                    marker=dict(size=10, color="red"))
 # Create figure
-fig = go.Figure(data=[gammat, gamma0, gamma1, origin])
+fig = go.Figure(data=[gammat, gamma0, gamma1, 
+                      origin, point_1])
 
 #this is the range of the plot
 xm = min(H[0].real) - 1
