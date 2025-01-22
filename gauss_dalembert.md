@@ -211,9 +211,9 @@ passe par l'origine.
 1.  Montrer que la courbe est nul homotope.
 
 
-<!-- ![](./nul_homo.png) -->
-< img src="./nul_homo.png" width="400">
-<img src="./gauss_dalembert.png" width="600">
+![bg left](./nul_homo.png)
+<!-- <img src="./nul_homo.png" width="200"> -->
+<!-- <img src="./gauss_dalembert.png" width="600"> -->
 
 
 
