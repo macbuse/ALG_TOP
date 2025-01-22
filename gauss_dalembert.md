@@ -107,7 +107,7 @@ est une **homotopie de rétraction**.
 |---|
 |L'indice est invariant par homotopies.|
 
-- $\gamma_0, \gamma_1 : [0,1] \to \mathbb{C}^*$ sont deux courbes fermées, homotopes par un chemin continu de courbes fermées 
+- $\gamma_0, \gamma_1 : [0,1] \to \mathbb{C}^*$ sont deux courbes fermées, homotopes par un chemin lisse de courbes fermées lisses.
 Alors les indices de $\gamma_0$ et $\gamma_1$ sont égaux.
 
 
@@ -176,7 +176,7 @@ Alors $P$ admet une racine dans $\mathbb{C}$.
 
 
 - $|P(2e^{is})  - 4 e^{2is}|=  | 2 e^{is} + 1 | \leq 3$
-- $H(s,t) = (2 e^{is})^2 + (1-t)(2 e^{is} + 1)$
+- $H(s,t) = t(2 e^{is})^2 + (1-t)(2 e^{is} + 1)$
     - $1 \leq |H(s,t)| \leq 7$
     - $H(s,0) = P(2e^{is})$
     - $H(s,1) = 4 e^{2is}$

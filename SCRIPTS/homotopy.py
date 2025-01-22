@@ -17,10 +17,10 @@ title = "Homotopy to a circle"
 # title = "Not a homotopy to a circle"
 Z = np.exp(1j*s)
 W = P(2*Z)
-Z = 4*Z**2
-Z = 0*Z + 1
+H = [ P(2*(1-t)*Z) for t in np.linspace(0,1,n_curves)]
 
-H = [(1-t)*W + t*Z for t in np.linspace(0,1,n_curves)]
+# Z = 4*Z**2
+# H = [(1-t)*W + t*Z for t in np.linspace(0,1,n_curves)]
 
 
 gamma0 = go.Scatter(x=H[0].real, y=H[0].imag, 
