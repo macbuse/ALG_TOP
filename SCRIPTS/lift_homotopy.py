@@ -4,11 +4,11 @@ import plotly.graph_objects as go
 import numpy as np
 
 # Generate curve data
-n_pts = 10
+n_pts = 80
 n_curves = 100
 
 
-T = np.linspace(0,2*np.pi,9)
+T = np.linspace(0,2*np.pi,n_pts)
 Z = np.exp(1J*T)
 RC = 1 + .5*Z
 RL =  np.log(np.abs(RC)) + 1J*np.arctan2(RC.imag,RC.real)

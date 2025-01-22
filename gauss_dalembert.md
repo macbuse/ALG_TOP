@@ -51,11 +51,18 @@ style: |
 greg mc shane
 
 
-#
+# Homotopies
 
-1. [keyframes and
-1. transitions](https://www.youtube.com/watch?v=VdH4TBDeCnI)
-[tweening](https://en.wikipedia.org/wiki/Inbetweening)
+-  $f$ est **homotope** à $g$ 
+s il existe une application continue
+$H:X \times [0,1] \to Y$ 
+telle que $H(x,0) = f(x)$ et $H(x,1) =
+g(x)$. 
+
+1. [keyframes and transitions](https://www.youtube.com/watch?v=VdH4TBDeCnI)
+1. [tweening](https://en.wikipedia.org/wiki/Inbetweening)
+1. transitions, morphing, interpolation
+1. [student project](https://ccrma.stanford.edu/~jacobliu/368Report/index.html)
 
 
 #
@@ -96,7 +103,7 @@ est une **homotopie de rétraction**.
 
 #
 
-| **Lemme** |
+| **Lemme (Cauchy)** |
 |---|
 |L'indice est invariant par homotopies.|
 
@@ -111,8 +118,8 @@ parcouru $n$ fois dans le sens trigonométrique.
 $$\gamma_1(s) = e^{2\pi i  n s},\,
 \dot{\theta(\gamma_1(s) )}
 =  \frac{x \dot{y} - y \dot{x}}{x^2 + y^2} = 2\pi n$$
-- et que $H(t,s)$ est une homotopie entre $\gamma_0$ et $\gamma_1$ de classe $C^1$.
-- $(s,t) \mapsto \dot{\theta(H(t,s))}, [0,1] \times [0,1] \to \mathbb{R}$ est continue.
+- et que $H(s,t)$ est une homotopie entre $\gamma_0$ et $\gamma_1$ de classe $C^1$.
+- $(s,t) \mapsto \dot{\theta(H(s,t))}, [0,1] \times [0,1] \to \mathbb{R}$ est continue.
 - $[0,1] \times [0,1]$ est compact, donc $\dot{\theta}$ est uniformément continue.
 
 <!-- = (1-t)\gamma_0(s) + t\gamma_1(s)$ est une homotopie. -->
@@ -121,8 +128,8 @@ $$\gamma_1(s) = e^{2\pi i  n s},\,
 #
 
 - Pour tout $0< \epsilon <2\pi$, il existe $\delta > 0$ tel que
-$|s - s'| + |t - t' | < 2\delta \Rightarrow | \dot{\theta(H(t,s))} - \dot{\theta(H(t',s'))} | < \epsilon$
-    - $\Rightarrow \;\;\;\;\;\;\;|t - t' | < 2\delta \Rightarrow | \dot{\theta(H(t,s))} - \dot{\theta(H(t',s))} | < \epsilon$
+$|s - s'| + |t - t' | < 2\delta \Rightarrow | \dot{\theta(H(s,t))} - \dot{\theta(H(s',t'))} | < \epsilon$
+    - $\Rightarrow \;\;\;\;\;\;\;|t - t' | < 2\delta \Rightarrow | \dot{\theta(H(s,t))} - \dot{\theta(H(s,t'))} | < \epsilon$
 
 - Pour $\delta$ assez petit:
 - $| Ind(\gamma_t) - Ind(\gamma_{t+\delta}) |$
@@ -169,10 +176,10 @@ Alors $P$ admet une racine dans $\mathbb{C}$.
 
 
 - $|P(2e^{is})  - 4 e^{2is}|=  | 2 e^{is} + 1 | \leq 3$
-- $H(s,t) = 2 e^{is})^2 + (1-t)(2 e^{is} + 1)$
+- $H(s,t) = (2 e^{is})^2 + (1-t)(2 e^{is} + 1)$
     - $1 \leq |H(s,t)| \leq 7$
-    - H(s,0) = P(2e^{is})
-    - H(s,1) = 4 e^{2is}
+    - $H(s,0) = P(2e^{is})$
+    - $H(s,1) = 4 e^{2is}$
 
 $\Rightarrow$ l'indice de $H(s,t)$ est $2$.
 
@@ -194,6 +201,21 @@ passe par l'origine.
 - [homotopy](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/SCRIPTS/Homotopy_to_a_circle.html)
 - [not homotopy](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/SCRIPTS/Homotopy_to_a_circle.html)
 <!-- https://htmlpreview.github.io/? -->
+
+#
+
+### Exos
+1. Montrer que la sphère $\mathbb{S}^2$ est simplement connexe.
+    - Projection stéréographique
+    - Courbe de Peano
+1.  Montrer que la courbe est nul homotope.
+
+
+<!-- ![](./nul_homo.png) -->
+< img src="./nul_homo.png" width="400">
+<img src="./gauss_dalembert.png" width="600">
+
+
 
 
 # Revêtements
@@ -229,6 +251,13 @@ $$z \mapsto z^2, \mathbb{C}^* \to \mathbb{C}^*$$
 
 #
 
+2. **Le revêtement du tore sur la bouteille de Klein** : Le tore $\mathbb{T}^2 = \mathbb{R}^2 / \mathbb{Z}^2$ est un revêtement double de la bouteille de Klein.  
+
+- [asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game))
+- [play](https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html)
+
+#
+
 ### Espaces quotients
 - On considère un espace topologique Y ainsi que relation
 d’équivalence ∼ entre les points de Y. On note
@@ -253,6 +282,20 @@ de toute partie fermée est fermée.
 | Propriété |
 |---|
 | Si Y est compact et la relation d’équivalence ∼ fermée <br> alors Y/∼ est séparé.|
+#
+
+| Propriété |
+|---|
+| Si Y est compact et la relation d’équivalence ∼ fermée <br> alors Y/∼ est séparé.|
+
+**Exemples**
+
+- $H < G$ un sous-groupe fermé de $G$ 
+ $x \sim y  \Leftrightarrow x^{-1}y \in H$
+alors $G/H$ est séparé.
+- $\mathbb{R}/\mathbb{Z} = \mathbb{S}^1$ est séparé.
+- $\mathbb{R}^n/\mathbb{Z}^n = \mathbb{T}^n$ est séparé.
+- $\mathbb{R}/\mathbb{Q}$ n'est pas séparé.
 
 # 
 
@@ -337,23 +380,6 @@ et s’appelle le RECOLLEMENT DE X À Y LE LONG DE f.
 
 # Exercices
 
-[deplier un cube on Wolfram](https://demonstrations.wolfram.com/UnfoldingPolyhedronNets/)
-
-1. Determiner les 4 figures qui se recollent pour former un cube.
-<img src="./cube_nets.png" width="600">
-
-1. Trouver les 11 facons de déplier un cube en un plan.
-
-<!-- [solution](https://github.com/TotallyReal/Polyhedron-Nets) -->
-
-#
-
-
-3. Soit $P(z)$ un polynôme complexe non constant. 
-Montrer que $P : \mathbb{C} \to \mathbb{C}$ est surjective.
-
-4. On considere $f: z \mapsto z^2 - z + 1$ de $\mathbb{C} \to \mathbb{C}$.
-    - Montrer que l'image de $\exp(it),\, t\in [0,2\pi]$ est une courbe avec un point d'auto-intersection.
 
 # Bibliographie
 
