@@ -76,8 +76,16 @@ $$z \mapsto z^2, \mathbb{C}^* \to \mathbb{C}^*$$
 - $p: \tilde{X} \to X$ surjective est appelée **application de revêtement** 
  si, pour tout point $x \in X$, il existe un voisinage ouvert $U \subset X$ (appelé **voisinage trivialisant**) tel que $p^{-1}(U)$ soit une union disjointe d'ouverts de $\tilde{X}$, chacun étant envoyé **homéomorphiquement** sur $U$ par $p$.  
 
+#
 
-- **L’application exponentielle** : $p: \mathbb{C} \to \mathbb{C}^*$ définie par $p(z) = e^{2\pi i z}$ est une application de revêtement où chaque point de $S^1$ possède une infinité de préimages.  
+### Exemples
+- $z \mapsto e^{2\pi i z}, \mathbb{C} \to \mathbb{C}^*$ est une application de revêtement où chaque point possède une infinité de préimages.  
+- $n \neq 0$
+  - $z \mapsto z^n, \mathbb{C}^* \to \mathbb{C}^*$ est une application de revêtement où chaque point possède exactement $n$ préimages.
+- $n \neq 0,\pm 1$
+  - $z \mapsto z^n, \mathbb{C} \to \mathbb{C}$ 
+n'est pas un véritable revêtement car elle échoue à être localement homéomorphe en $z = 0$, où plusieurs « feuilles » fusionnent autrement dit $0$ n'as pas de voisinage trivialisant (
+ **revêtement ramifié** )
 
 #
 
@@ -86,16 +94,27 @@ $$z \mapsto z^2, \mathbb{C}^* \to \mathbb{C}^*$$
 2. **Fibres discrètes** : L’image réciproque $p^{-1}(x)$ est un **ensemble discret** de points.  
 3. **Uniformité** : Le nombre de préimages de chaque point est constant sur les composantes connexes de $X$, supposant que $\tilde{X}$ est connexe.  
 
+# 
+
+### Principe
+
+- $\{ \tilde{X} \text{ revetements de X} \} \longleftrightarrow \{ \text{sous-groupes de }
+ \pi_1(X) \}$
+- $\pi_1(X)$ est le groupe fondamental de $X$.
+$:=\{ \text{lacets avec le m\^eme  point de depart}
+\}/\text{homotopies}$
+- $\pi_1(X)$ est un invariant topologique de $X$.
+
+$\pi_1(\mathbb{C}^*) \simeq \pi_1(\mathbb{S})^1) \simeq \mathbb{Z}$
+
 #
 
 ### Exemples :  
-1. **L’application exponentielle** : La fonction $p: \mathbb{R} \to S^1$ définie par $p(t) = e^{2\pi i t}$ est une application de revêtement du réel $\mathbb{R}$ sur le cercle unité $S^1$, où chaque point de $S^1$ possède une infinité de préimages.  
-2. **Le revêtement du tore sur la bouteille de Klein** : Le tore $\mathbb{T}^2 = \mathbb{R}^2 / \mathbb{Z}^2$ est un revêtement double de la bouteille de Klein.  
-3. **Revêtement ramifié (non régulier)** : Une application comme $p: \mathbb{C} \to \mathbb{C}$, définie par $p(z) = z^n$, n'est pas un véritable revêtement car elle échoue à être localement homéomorphe en $z = 0$, où plusieurs « feuilles » fusionnent.  
 
-#
-
-2. **Le revêtement du tore sur la bouteille de Klein** : Le tore $\mathbb{T}^2 = \mathbb{R}^2 / \mathbb{Z}^2$ est un revêtement double de la bouteille de Klein.  
+- Le cylindre $\mathbb{S}^1 \times \mathbb{R}$ est un revêtement du tore  $\mathbb{S}^1\times \mathbb{S}^1$.
+- L'anneau $\{ 1 \leq |z| \leq 2 \}$ est un revetement double d'une bande de Möbius (model ??)
+$\mathbb{S}^2$.
+-  **Le revêtement du tore sur la bouteille de Klein** : Le tore $\mathbb{T}^2 = \mathbb{R}^2 / \mathbb{Z}^2$ est un revêtement double de la bouteille de Klein.  
 
 - [asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game))
 - [play](https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html)

@@ -176,7 +176,7 @@ Alors $P$ admet une racine dans $\mathbb{C}$.
 
 
 - $|P(2e^{is})  - 4 e^{2is}|=  | 2 e^{is} + 1 | \leq 3$
-- $H(s,t) = t(2 e^{is})^2 + (1-t)(2 e^{is} + 1)$
+- $H(s,t) = (2 e^{is})^2 + (1-t)(2 e^{is} + 1)$
     - $1 \leq |H(s,t)| \leq 7$
     - $H(s,0) = P(2e^{is})$
     - $H(s,1) = 4 e^{2is}$
