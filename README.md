@@ -17,7 +17,8 @@ Surfaces](https://archive.org/details/geometryofsurfac0000stil/page/n235/mode/2u
 
 
 1. [Introduction](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/intro.html)
- -  [D'alembert Gauss](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/gauss_dalembert.html)
+1.   [D'alembert Gauss](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/gauss_dalembert.html)
+
 1. Simplicial complexes
 2. Homotopy
 1. Fundamental group

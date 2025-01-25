@@ -60,6 +60,11 @@ style: |
 <!-- <img src="./gauss_dalembert.png" width="600"> -->
 
 
+#
+
+1. revetements
+1. quotients
+1. recollement
 
 
 # Revêtements
@@ -87,6 +92,23 @@ $$z \mapsto z^2, \mathbb{C}^* \to \mathbb{C}^*$$
 n'est pas un véritable revêtement car elle échoue à être localement homéomorphe en $z = 0$, où plusieurs « feuilles » fusionnent autrement dit $0$ n'as pas de voisinage trivialisant (
  **revêtement ramifié** )
 
+
+#
+
+### Exercices
+
+1. Completer le tableau suivant
+
+|  $f$|dom/codom |$f^{-1}(e^{2\pi i\theta})$                                     | vois triv |
+|--------------------------------|--------------------------|---------------------------------------------------------------|-----------------------------------------|
+| $e^{2\pi i z}$  | $\mathbb{C} \to \mathbb{C}^*$  | $\theta + 2\pi i k , k\in \mathbb{Z}$                      |   |
+| $z^n$           | $\mathbb{C}^* \to \mathbb{C}^*$ |  | |
+
+<!-- | $z^n$           | $\mathbb{C}^* \to \mathbb{C}^*$ | $e^{2\pi i (\theta +  k)/n},\, 0 \leq k \leq n-1$ | | -->
+
+2. Montrer que $0$ ne possede pas de voisinage trvilisant pour $z \mapsto z^n, \mathbb{C} \to \mathbb{C}$.
+
+
 #
 
 ### Propriétés clés :  
@@ -103,21 +125,46 @@ n'est pas un véritable revêtement car elle échoue à être localement homéom
 - $\pi_1(X)$ est le groupe fondamental de $X$.
 $:=\{ \text{lacets avec le m\^eme  point de depart}
 \}/\text{homotopies}$
+
 - $\pi_1(X)$ est un invariant topologique de $X$.
-
-$\pi_1(\mathbb{C}^*) \simeq \pi_1(\mathbb{S})^1) \simeq \mathbb{Z}$
-
+- $\pi_1(\mathbb{C}^*) \simeq \pi_1(\mathbb{S})^1) \simeq \mathbb{Z}$
+- $\pi_1(\mathbb{S}^2) \simeq \{e\}$, 
 #
 
 ### Exemples :  
 
+- tout revetement de $\mathbb{S}^2$ est homéomorphe à $\mathbb{S}^2$.
 - Le cylindre $\mathbb{S}^1 \times \mathbb{R}$ est un revêtement du tore  $\mathbb{S}^1\times \mathbb{S}^1$.
 - L'anneau $\{ 1 \leq |z| \leq 2 \}$ est un revetement double d'une bande de Möbius (model ??)
-$\mathbb{S}^2$.
 -  **Le revêtement du tore sur la bouteille de Klein** : Le tore $\mathbb{T}^2 = \mathbb{R}^2 / \mathbb{Z}^2$ est un revêtement double de la bouteille de Klein.  
 
-- [asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game))
-- [play](https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html)
+- [video game asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game)) and  [play](https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html)
+
+#
+
+- Une **relation d'équivalence** $\sim$ 
+sur un ensemble $X$ est une relation binaire 
+qui satisfait les 3 propriétés suivantes $\forall x, y, z \in X$ :  
+
+1. **Réflexivité** : $x \sim x$ 
+1. **Symétrie** : Si $x \sim y$, alors $y \sim x$ 
+1. **Transitivité** : Si $x \sim y$ et $y \sim z$, alors $x \sim z$ 
+
+- Une relation d'équivalence divise $X$ en **classes d'équivalence**$[x]:= \{ y\in X, y \sim x\}$, 
+Les classes forment un **ensemble quotient** 
+$X / \sim :=\{[x],\, x\in X \}$.
+
+#
+
+### Exemples
+
+1. $X = \mathbb{Z}$, $x \sim y \Leftrightarrow x - y \in 2\mathbb{Z}$
+1. $X = \mathbb{R}$, $x \sim y \Leftrightarrow x - y \in \mathbb{Z}$
+1. $X = G$ un groupe, $H < G$ un sous-groupe, $x \sim y \Leftrightarrow
+x^{-1}y \in H$
+1. $X = \mathbb{S}^2$ et $x \sim y \Leftrightarrow x = y$ ou $x$ et $y$ sont dans l'hemisphère sud.
+
+
 
 #
 
@@ -129,7 +176,7 @@ la surjection canonique de Y sur son espace quotient.
 - On définit une topologie sur Y/∼ en décrétant que 
 $U \subset Y/∼$ est ouvert si $p^{-1}(U) \subset Y$ est ouvert
 - Pour cette topologie, la surjection canonique p est
-tautologiquement continue.
+**tautologiquement continue.**
 
 #
 
@@ -192,11 +239,23 @@ Alors l’application $\bar{f} : Y/∼ \,\rightarrow   Z$ donnée par $\bar{f}([
 est bien définie et continue.
 
 
+
+$$
+\begin{matrix}
+  Y & &  \\
+  \downarrow{\pi} & \searrow{f}  &\\ 
+Y / \sim & \xrightarrow{\bar{f}} & Z
+\end{matrix}
+\;f = \bar{f}\circ \pi$$  
+
+#
+
 - **Démonstration.** Le caractère bien défini provient du fait
 que f est constante sur chaque classe d’équivalence.
-- Soit U un ouvert de Z. L’image réciproque $\bar{f}^{-1}(U) \subset Y/~$ est  ouvert  si et seulement si $p^{−1}(\bar{f}^{−1}(U)) \subset Y$ est ouvert. 
-Or par construction :
-$p^{−1}(\bar{f}^{−1}(U)) = (\bar{f}\circ p)^{−1}(U) = f^{−1}(U)$ est ouvert car f continue.
+- Soit U un ouvert de Z. L’image réciproque $\bar{f}^{-1}(U) \subset Y/~$ est  ouvert  si et seulement si $\pi^{−1}(\bar{f}^{−1}(U)) \subset Y$ est ouvert. 
+Or par construction $f = \bar{f}\circ \pi$  :
+$$\pi^{−1}(\bar{f}^{−1}(U)) = (\bar{f}\circ \pi)^{−1}(U) = f^{−1}(U)$$
+- est ouvert car f continue. $\Box$
 
 #
 ### Exemple : le cercle $\mathbb{S}^1$
@@ -238,7 +297,7 @@ sur la somme disjointe $Z = X \sqcup Y$ par $z_1 ∼ z_2$
 
 
 - **Définition**– L’espace quotient est noté $X \cup_f Y = X \sqcup Y/∼$
-et s’appelle le RECOLLEMENT DE X À Y LE LONG DE f.
+et s’appelle le **recollement de $X$ à $Y$ le long de f.**
 
 
 # Exercices
