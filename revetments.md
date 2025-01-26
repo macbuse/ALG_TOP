@@ -66,11 +66,16 @@ style: |
 1. quotients
 1. recollement
 
+**$X$ est toujours un espace topologique separé**
+
 
 # Revêtements
 
-$$z \mapsto \exp(z), \mathbb{C} \to \mathbb{C}^*$$
-$$z \mapsto z^2, \mathbb{C}^* \to \mathbb{C}^*$$
+
+|application|symmetrie|
+|---|---|
+|$z \mapsto \exp(z), \mathbb{C} \to \mathbb{C}^*$| $z \mapsto z + 2\pi i$ |
+|$z \mapsto z^2, \mathbb{C}^* \to \mathbb{C}^*$| $z \mapsto -z$|
 
 
 
@@ -79,7 +84,10 @@ $$z \mapsto z^2, \mathbb{C}^* \to \mathbb{C}^*$$
 - Une **application de revêtement** (ou **revêtement topologique**) est un type de fonction continue entre espaces topologiques qui, intuitivement, représente une version « dépliée » ou « en couches » d’un espace. 
 
 - $p: \tilde{X} \to X$ surjective est appelée **application de revêtement** 
- si, pour tout point $x \in X$, il existe un voisinage ouvert $U \subset X$ (appelé **voisinage trivialisant**) tel que $p^{-1}(U)$ soit une union disjointe d'ouverts de $\tilde{X}$, chacun étant envoyé **homéomorphiquement** sur $U$ par $p$.  
+ si, $\forall x \in X, \exists U \subset X$ un voisinage ouvert (**voisinage trivialisant**) tel que $p^{-1}(U)$ soit une union disjointe d'ouverts de $\tilde{X}$, chacun étant envoyé **homéomorphiquement** sur $U$ par $p$.  
+
+<!-- - $p: \tilde{X} \to X$ surjective est appelée **application de revêtement** --> 
+<!--  si, pour tout point $x \in X$, il existe un voisinage ouvert $U \subset X$ (appelé **voisinage trivialisant**) tel que $p^{-1}(U)$ soit une union disjointe d'ouverts de $\tilde{X}$, chacun étant envoyé **homéomorphiquement** sur $U$ par $p$. -->  
 
 #
 
@@ -89,8 +97,8 @@ $$z \mapsto z^2, \mathbb{C}^* \to \mathbb{C}^*$$
   - $z \mapsto z^n, \mathbb{C}^* \to \mathbb{C}^*$ est une application de revêtement où chaque point possède exactement $n$ préimages.
 - $n \neq 0,\pm 1$
   - $z \mapsto z^n, \mathbb{C} \to \mathbb{C}$ 
-n'est pas un véritable revêtement car elle échoue à être localement homéomorphe en $z = 0$, où plusieurs « feuilles » fusionnent autrement dit $0$ n'as pas de voisinage trivialisant (
- **revêtement ramifié** )
+n'est pas un véritable revêtement car elle échoue à être localement homéomorphe en $z = 0$, où plusieurs « feuilles » fusionnent autrement dit $0$ n'as pas de voisinage trivialisant 
+  ( **revêtement ramifié** )
 
 
 #
@@ -99,9 +107,9 @@ n'est pas un véritable revêtement car elle échoue à être localement homéom
 
 1. Completer le tableau suivant
 
-|  $f$|dom/codom |$f^{-1}(e^{2\pi i\theta})$                                     | vois triv |
+|  $f$|$\tilde{X}\to X$|$f^{-1}(re^{i\theta})$                                     | vois triv |
 |--------------------------------|--------------------------|---------------------------------------------------------------|-----------------------------------------|
-| $e^{2\pi i z}$  | $\mathbb{C} \to \mathbb{C}^*$  | $\theta + 2\pi i k , k\in \mathbb{Z}$                      |   |
+| $e^{ i z}$  | $\mathbb{C} \to \mathbb{C}^*$  | $\log(r) + i(\theta + 2\pi  k), k\in \mathbb{Z}$                      |   |
 | $z^n$           | $\mathbb{C}^* \to \mathbb{C}^*$ |  | |
 
 <!-- | $z^n$           | $\mathbb{C}^* \to \mathbb{C}^*$ | $e^{2\pi i (\theta +  k)/n},\, 0 \leq k \leq n-1$ | | -->
@@ -116,43 +124,46 @@ n'est pas un véritable revêtement car elle échoue à être localement homéom
 2. **Fibres discrètes** : L’image réciproque $p^{-1}(x)$ est un **ensemble discret** de points.  
 3. **Uniformité** : Le nombre de préimages de chaque point est constant sur les composantes connexes de $X$, supposant que $\tilde{X}$ est connexe.  
 
+- **Définition** $X$ est connexe $\text{card}(p^{-1}(x))=$  degré du revêtement.
+
 # 
 
 ### Principe
 
 - $\{ \tilde{X} \text{ revetements de X} \} \longleftrightarrow \{ \text{sous-groupes de }
- \pi_1(X) \}$
-- $\pi_1(X)$ est le groupe fondamental de $X$.
+ H < \pi_1(X) \}$
+    - $\pi_1(X)$ est **le groupe fondamental de $X$.**
 $:=\{ \text{lacets avec le m\^eme  point de depart}
 \}/\text{homotopies}$
 
 - $\pi_1(X)$ est un invariant topologique de $X$.
-- $\pi_1(\mathbb{C}^*) \simeq \pi_1(\mathbb{S})^1) \simeq \mathbb{Z}$
-- $\pi_1(\mathbb{S}^2) \simeq \{e\}$, 
+    - $\pi_1(\mathbb{C}^*) \simeq \pi_1(\mathbb{S}^1) \simeq \mathbb{Z}$
+    - $\pi_1(\mathbb{S}^2)$ comme pour tout espace 
+    simplement connexe est trivial.
 #
 
-### Exemples :  
+### Exemples 
 
 - tout revetement de $\mathbb{S}^2$ est homéomorphe à $\mathbb{S}^2$.
 - Le cylindre $\mathbb{S}^1 \times \mathbb{R}$ est un revêtement du tore  $\mathbb{S}^1\times \mathbb{S}^1$.
-- L'anneau $\{ 1 \leq |z| \leq 2 \}$ est un revetement double d'une bande de Möbius (model ??)
--  **Le revêtement du tore sur la bouteille de Klein** : Le tore $\mathbb{T}^2 = \mathbb{R}^2 / \mathbb{Z}^2$ est un revêtement double de la bouteille de Klein.  
+- L'anneau est  revetement double d'une bande de Möbius (model ??)
+- Le tore $\mathbb{T}^2 = \mathbb{R}^2 / \mathbb{Z}^2$ est revêtement double de la bouteille de Klein.  
 
-- [video game asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game)) and  [play](https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html)
+- [video game asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game)) and  [play](https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html) and [abel douzal](https://arxiv.org/pdf/2306.02041)
 
 #
 
-- Une **relation d'équivalence** $\sim$ 
+- **Definition :** une **relation d'équivalence** $(\sim)$ 
 sur un ensemble $X$ est une relation binaire 
 qui satisfait les 3 propriétés suivantes $\forall x, y, z \in X$ :  
 
 1. **Réflexivité** : $x \sim x$ 
-1. **Symétrie** : Si $x \sim y$, alors $y \sim x$ 
+1. **Symétrie** : si $x \sim y$, alors $y \sim x$ 
 1. **Transitivité** : Si $x \sim y$ et $y \sim z$, alors $x \sim z$ 
 
 - Une relation d'équivalence divise $X$ en **classes d'équivalence**$[x]:= \{ y\in X, y \sim x\}$, 
 Les classes forment un **ensemble quotient** 
-$X / \sim :=\{[x],\, x\in X \}$.
+$X / \sim\, :=\{[x],\, x\in X \}$.
 
 #
 
@@ -209,6 +220,46 @@ alors $G/H$ est séparé.
 
 # 
 
+### Exemple : action d'un groupe
+
+<!-- Propriété bis (rappel).– Si Y est relativement compact et -->
+<!-- la relation d’équivalence ∼ fermée alors Y/∼ est séparé. -->
+
+- Soient $X$ un espace muni d'une action d'un groupe $G$  par
+homéomorphisme. L'action est :
+
+- **libre** si pour tout $x \in X$,
+$g \in G$ on a $g \neq e \Rightarrow g.x \neq x$.
+- **propre** si pour tout compact $K \subset X$, l'ensemble
+$\{g \in G, g.K \cap K \neq \emptyset\}$ est compact (fini).
+- **l'orbite de $x$ sous $G$** est noté $G\cdot x := \{g.x, g \in G\}$.
+- **les orbites de l'acion** noté $G/X$ est l'espace quotient de $X$ par $G$.
+
+#
+
+### Ruban de Möbius
+
+<!-- -  l'anneau $X = \{ z \in \mathbb{C}, 1/2 \leq |z| \leq  2\}$ --> 
+<!-- est un revêtement double du ruban de Möbius --> 
+<!-- - $G = \langle  z\mapsto 1/z \rangle$ est un groupe de homéomorphismes de $X$. -->
+
+- bande $X = \{-1 < \text{Im }(z) < 1\}\subset \mathbb{C}$ (pas un groupe)
+- $G = \langle g:z \mapsto \bar{z} + 2\pi  \rangle$ est un groupe de homéomorphismes de $X$.
+    - $X/G$ est un ruban de Möbius 
+    - $X/H,\,H= \langle g^2 \rangle$ un cylindre.
+- take a paper strip and twist it once before joining the ends.
+
+$$
+\begin{matrix}
+  X &  &  \\
+  \downarrow{p_H} & \searrow{p_G}  &\\ 
+ X/H  \xrightarrow{\bar{p}} & X/G
+\end{matrix}
+\;p_G = \bar{p}\circ p_H$$  
+
+
+# 
+
 ### Espaces quotients
 
 - La compacité est une hypothèse contraignante. 
@@ -224,10 +275,6 @@ compacts, tous les espaces homéomorphes à $\mathbb{R}^n$ , toutes
 les variétés topologiques, tous les espaces discrets.
 
 
-
-# 
-Propriété bis (rappel).– Si Y est relativement compact et
-la relation d’équivalence ∼ fermée alors Y/∼ est séparé.
 
 #
 
@@ -286,14 +333,14 @@ $$y_1 ∼ y_2 \Leftrightarrow y_1 = y_2 \text{ ou } (y_1, y_2) \in A$$
 
 #
 
-- Soient X et Y deux espaces topologiques, A ⊂ Y et
-f : A → X une application continue. 
+- Soient X et Y deux espaces topologiques,
+$A \subset Y$ et $f : A \to X$ une application continue. 
 On définit une relation d’équivalence ∼ 
 sur la somme disjointe $Z = X \sqcup Y$ par $z_1 ∼ z_2$
 
 - si $z_1 = z_2$
-- ou $(z_1 ∈ A \text{ et } z_2 = f(z_1))$
-- ou $(z_2 ∈ A \text{ et } z_1 = f(z_2))$
+ ou $(z_1 ∈ A \text{ et } z_2 = f(z_1))$
+ ou $(z_2 ∈ A \text{ et } z_1 = f(z_2))$
 
 
 - **Définition**– L’espace quotient est noté $X \cup_f Y = X \sqcup Y/∼$
