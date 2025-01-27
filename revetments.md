@@ -66,13 +66,13 @@ style: |
 1. quotients
 1. recollement
 
-**IMPORTANT :** $X$ est toujours un espace topologique  **separé**
- càd tout couple de
-points distincts admet des voisinages disjoints.
+- **IMPORTANT :** $X$ est toujours un espace topologique  **separé**
+ càd tout couple de points distincts admet des voisinages disjoints.
 
 
 # Revêtements
 
+<!-- _transition: cube -->
 
 |application|symmetrie|
 |---|---|
@@ -86,7 +86,7 @@ points distincts admet des voisinages disjoints.
 - Une **application de revêtement** (ou **revêtement topologique**) est un type de fonction continue entre espaces topologiques qui, intuitivement, représente une version « dépliée » ou « en couches » d’un espace. 
 
 - $p: \tilde{X} \to X$ surjective est appelée **application de revêtement** 
- si, $\forall x \in X, \exists U \subset X$ un voisinage ouvert (**voisinage trivialisant**) tel que $p^{-1}(U)$ soit une union disjointe d'ouverts de $\tilde{X}$, chacun étant envoyé **homéomorphiquement** sur $U$ par $p$.  
+ si, $\forall x \in X, \exists U_x \subset X$ un voisinage ouvert (**voisinage trivialisant**) tel que $p^{-1}(U_x)$ soit une union disjointe d'ouverts de $\tilde{X}$, chacun étant envoyé **homéomorphiquement** sur $U_x$ par $p$.  
 
 <!-- - $p: \tilde{X} \to X$ surjective est appelée **application de revêtement** --> 
 <!--  si, pour tout point $x \in X$, il existe un voisinage ouvert $U \subset X$ (appelé **voisinage trivialisant**) tel que $p^{-1}(U)$ soit une union disjointe d'ouverts de $\tilde{X}$, chacun étant envoyé **homéomorphiquement** sur $U$ par $p$. -->  
@@ -132,7 +132,7 @@ n'est pas un véritable revêtement car elle échoue à être localement homéom
 
 ### Principe
 
-- $\{ \tilde{X} \text{ revetements de X} \} \longleftrightarrow \{ \text{sous-groupes de }
+- $\{ \tilde{X} \text{ revetements de X} \} \longleftrightarrow \{ \text{sous-groupes }
  H < \pi_1(X) \}$
     - $\pi_1(X)$ est **le groupe fondamental de $X$.**
 $:=\{ \text{lacets avec le m\^eme  point de depart}
@@ -144,14 +144,17 @@ $:=\{ \text{lacets avec le m\^eme  point de depart}
     simplement connexe est trivial.
 #
 
+<!-- _transition: cube -->
 ### Exemples 
 
-- tout revetement de $\mathbb{S}^2$ est homéomorphe à $\mathbb{S}^2$.
-- Le cylindre $\mathbb{S}^1 \times \mathbb{R}$ est un revêtement du tore  $\mathbb{S}^1\times \mathbb{S}^1$.
+- Tout revetement de $\mathbb{S}^2$ est homéomorphe à $\mathbb{S}^2$.
+- Le cylindre $\mathbb{S}^1 \times \mathbb{R}$ est un revêtement du tore  $\mathbb{T}^2 = \mathbb{S}^1\times \mathbb{S}^1$.
 - L'anneau est  revetement double d'une bande de Möbius (model ??)
 - Le tore $\mathbb{T}^2 = \mathbb{R}^2 / \mathbb{Z}^2$ est revêtement double de la bouteille de Klein.  
 
 - [video game asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game)) and  [play](https://www.echalk.co.uk/amusements/Games/asteroidsClassic/ateroids.html) and [abel douzal](https://arxiv.org/pdf/2306.02041)
+
+# Espace quotient
 
 #
 
@@ -207,6 +210,7 @@ de toute partie fermée est fermée.
 | Propriété |
 |---|
 | Si Y est compact et la relation d’équivalence ∼ fermée <br> alors Y/∼ est séparé.|
+
 #
 
 | Propriété |
@@ -264,7 +268,7 @@ $$
 
 # 
 
-### Espaces quotients
+### Espaces quotients : compacité
 
 - La compacité est une hypothèse contraignante. 
 Elle peut être remplacée par une propriété plus faible, 
@@ -275,8 +279,7 @@ compact*
     1. et si tout point x élément de X admet un voisinage compact (autrement dit si x appartient à un ouvert relativement compact)
 
 - Exemples. Sont relativement compacts, tous les
-compacts, tous les espaces homéomorphes à $\mathbb{R}^n$ , toutes
-les variétés topologiques, tous les espaces discrets.
+compacts, tous les espaces homéomorphes à $\mathbb{R}^n$. 
 
 
 
@@ -326,7 +329,7 @@ d’équivalence. Elle induit donc une application continue.
 
 - Soit Y un espace topologique et soit $A \subset Y$. 
 On considère la relation d’équivalence suivante
-$$y_1 ∼ y_2 \Leftrightarrow y_1 = y_2 \text{ ou } (y_1, y_2) \in A$$
+$y_1 ∼ y_2 \Leftrightarrow y_1 = y_2 \text{ ou } (y_1, y_2) \in A$
 
 - L’espace quotient Y/∼ est donc formé 
     - de la classe [a] où a ∈ A 
@@ -334,6 +337,15 @@ $$y_1 ∼ y_2 \Leftrightarrow y_1 = y_2 \text{ ou } (y_1, y_2) \in A$$
 
 - **Définition**.– L’espace quotient est noté Y/A et est appelé espace quotient de $Y$ par $A$.
 
+-  **Exemple(s)** : $X = \mathbb{S}^2$ et 
+    1. $A$ = l'equateur.
+    1. $A$ = l'hemisphère sud.
+
+#
+
+-  **Exemple(s)** : $X = \mathbb{S}^2$ et 
+    1. $A$ = l'equateur.
+    1. $A$ = l'hemisphère sud.
 
 #
 
@@ -353,6 +365,11 @@ et s’appelle le **recollement de $X$ à $Y$ le long de f.**
 
 # Exercices
 
+1. Démontrer la proposition : 
+
+| Propriété |
+|---|
+| Si Y est compact et la relation d’équivalence ∼ fermée <br> alors Y/∼ est séparé.|
 
 # Bibliographie
 
