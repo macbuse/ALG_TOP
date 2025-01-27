@@ -335,17 +335,33 @@ $y_1 ∼ y_2 \Leftrightarrow y_1 = y_2 \text{ ou } (y_1, y_2) \in A$
     - de la classe [a] où a ∈ A 
     - et des classes d’équivalence [y] avec y ∈ Y \ A.
 
-- **Définition**.– L’espace quotient est noté Y/A et est appelé espace quotient de $Y$ par $A$.
+- **Définition**.– L’espace quotient est noté Y/A 
+et est appelé **espace quotient de $Y$ par $A$.**
 
 -  **Exemple(s)** : $X = \mathbb{S}^2$ et 
     1. $A$ = l'equateur.
     1. $A$ = l'hemisphère sud.
 
 #
-
+![bg left](./balloon.webp)
 -  **Exemple(s)** : $X = \mathbb{S}^2$ et 
-    1. $A$ = l'equateur.
-    1. $A$ = l'hemisphère sud.
+    1. $E$ = l'equateur.
+    1. $H$ = l'hemisphère sud.
+
+#
+![bg left](./balloons2.webp)
+-  **Exemple(s)** : $X = \mathbb{S}^2$ et 
+    1. $E$ = l'equateur.
+
+### Not right!!!!
+
+
+#
+
+![bg left](./sphere.png)
+-  **Exemple(s)** : $X = \mathbb{S}^2$ et 
+    1. $E$ = l'equateur.
+    1. $H$ = l'hemisphère sud.
 
 #
 
@@ -362,6 +378,21 @@ sur la somme disjointe $Z = X \sqcup Y$ par $z_1 ∼ z_2$
 - **Définition**– L’espace quotient est noté $X \cup_f Y = X \sqcup Y/∼$
 et s’appelle le **recollement de $X$ à $Y$ le long de f.**
 
+#
+<!-- ![bg left height=200](./bubbles.png) -->
+![bg left height:650](./bubbles.png)
+-  **Exemple** : somme connexe de deux spheres
+    - $H^-$ = l'hemisphère sud 
+    - $H^+$ = l'hemisphère nord 
+
+
+#
+![bg left](https://math.berkeley.edu/~hutching/pub/db2ann/sdb-156.jpeg)
+-  **Exemple** : somme connexe de deux spheres
+    - $H^-$ = l'hemisphère sud 
+    - $H^+$ = l'hemisphère nord 
+
+= **the double bubble**
 
 # Exercices
 
