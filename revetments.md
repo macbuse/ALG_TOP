@@ -66,7 +66,9 @@ style: |
 1. quotients
 1. recollement
 
-**$X$ est toujours un espace topologique separé**
+**IMPORTANT :** $X$ est toujours un espace topologique  **separé**
+ càd tout couple de
+points distincts admet des voisinages disjoints.
 
 
 # Revêtements
@@ -173,13 +175,15 @@ $X / \sim\, :=\{[x],\, x\in X \}$.
 1. $X = \mathbb{R}$, $x \sim y \Leftrightarrow x - y \in \mathbb{Z}$
 1. $X = G$ un groupe, $H < G$ un sous-groupe, $x \sim y \Leftrightarrow
 x^{-1}y \in H$
-1. $X = \mathbb{S}^2$ et $x \sim y \Leftrightarrow x = y$ ou $x$ et $y$ sont dans l'hemisphère sud.
+1. $X = \mathbb{S}^2$ et $x \sim y \Leftrightarrow x = y$ 
+    1. ou $x$ et $y$ sont dans l'hemisphère sud.
+    1. ou $x$ et $y$ sont dans l'equateur.
 
 
 
 #
 
-### Espaces quotients
+### Espace quotient
 - On considère un espace topologique Y ainsi que relation
 d’équivalence ∼ entre les points de Y. On note
 $p : Y \rightarrow Y/∼$
@@ -192,12 +196,12 @@ $U \subset Y/∼$ est ouvert si $p^{-1}(U) \subset Y$ est ouvert
 #
 
 - L’espace quotient Y/∼ n’est pas nécessairement séparé.
-- Un espace topologique est dit SÉPARÉ si tout couple de
+- Un espace topologique est dit **séparé** si tout couple de
 points distincts admet des voisinages disjoints.
 - Le **saturé** d’un ensemble F ⊂ Y est l’ensemble
 $p^{-1}(p(F))$, c’est-à-dire tous les points de Y qui sont en
 relation par ∼ à un point de F.
-- La relation d’équivalence ∼ est dite FERMÉE si le saturé
+- La relation d’équivalence ∼ est dite **fermée** si le saturé
 de toute partie fermée est fermée.
 
 | Propriété |

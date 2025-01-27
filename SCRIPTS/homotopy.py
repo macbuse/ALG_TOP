@@ -41,7 +41,8 @@ origin = go.Scatter(x=[0], y=[0], mode="markers",
 point_1 = go.Scatter(x=[1], y=[0], mode="markers",
                     marker=dict(size=10, color="red"))
 # Create figure
-                      # origin, point_1])
+fig = go.Figure(data=[gammat, gamma0, gamma1, 
+                      origin, point_1])
 
 #this is the range of the plot
 xm = min(H[0].real) - 1

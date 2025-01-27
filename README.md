@@ -14,10 +14,14 @@ Surfaces](https://archive.org/details/geometryofsurfac0000stil/page/n235/mode/2u
 [Topologicon](https://permamath.e-monsite.com/medias/files/petit-jean-pierre-le-topologicon.pdf) is very amusing and informative.
 
 
+---
+
+### Slides
 
 
 1. [Introduction](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/intro.html)
-1.   [D'alembert Gauss](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/gauss_dalembert.html)
+1.   [D'alembert Gauss : homotopies](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/gauss_dalembert.html)
+1. [Revetements et quotients](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/revetements.html)
 
 1. Simplicial complexes
 2. Homotopy
