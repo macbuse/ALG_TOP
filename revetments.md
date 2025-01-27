@@ -69,6 +69,23 @@ style: |
 - **IMPORTANT :** $X$ est toujours un espace topologique  **separé**
  càd tout couple de points distincts admet des voisinages disjoints.
 
+# 
+
+### compacité
+
+- La compacité est une hypothèse contraignante. 
+Elle peut être remplacée par une propriété plus faible, 
+
+- **Définition.** Un espace topologique X est dit *localement
+compact* 
+    1. s’il est séparé 
+    1. et si tout point x élément de X admet un voisinage compact (autrement dit si x appartient à un ouvert relativement compact)
+
+- **Exemples :** Sont localement compacts, tous les
+compacts, tous les espaces homéomorphes à $\mathbb{R}^n$. 
+
+
+
 
 # Revêtements
 
@@ -156,8 +173,11 @@ $:=\{ \text{lacets avec le m\^eme  point de depart}
 
 # Espace quotient
 
+<!-- _transition: cube -->
+
 #
 
+<!-- _transition: slide -->
 - **Definition :** une **relation d'équivalence** $(\sim)$ 
 sur un ensemble $X$ est une relation binaire 
 qui satisfait les 3 propriétés suivantes $\forall x, y, z \in X$ :  
@@ -171,7 +191,7 @@ Les classes forment un **ensemble quotient**
 $X / \sim\, :=\{[x],\, x\in X \}$.
 
 #
-
+<!-- _transition: cube -->
 ### Exemples
 
 1. $X = \mathbb{Z}$, $x \sim y \Leftrightarrow x - y \in 2\mathbb{Z}$
@@ -186,6 +206,7 @@ x^{-1}y \in H$
 
 #
 
+<!-- _transition: slide -->
 ### Espace quotient
 - On considère un espace topologique Y ainsi que relation
 d’équivalence ∼ entre les points de Y. On note
@@ -233,13 +254,13 @@ alors $G/H$ est séparé.
 <!-- Propriété bis (rappel).– Si Y est relativement compact et -->
 <!-- la relation d’équivalence ∼ fermée alors Y/∼ est séparé. -->
 
-- Soient $X$ un espace muni d'une action d'un groupe $G$  par
-homéomorphisme. L'action est :
+- Soient $X$ un espace muni d'une action d'un groupe $G$ 
+par homéomorphisme. L'action est :
 
 - **libre** si pour tout $x \in X$,
 $g \in G$ on a $g \neq e \Rightarrow g.x \neq x$.
-- **propre** si pour tout compact $K \subset X$, l'ensemble
-$\{g \in G, g.K \cap K \neq \emptyset\}$ est compact (fini).
+- **propre** si pour tout compact $K \subset X$,
+l'ensemble $\{g \in G, g.K \cap K \neq \emptyset\}$ est compact (fini).
 - **l'orbite de $x$ sous $G$** est noté $G\cdot x := \{g.x, g \in G\}$.
 - **les orbites de l'acion** noté $G/X$ est l'espace quotient de $X$ par $G$.
 
@@ -264,22 +285,6 @@ $$
  X/H  \xrightarrow{\bar{p}} & X/G
 \end{matrix}
 \;p_G = \bar{p}\circ p_H$$  
-
-
-# 
-
-### Espaces quotients : compacité
-
-- La compacité est une hypothèse contraignante. 
-Elle peut être remplacée par une propriété plus faible, 
-
-- **Définition.** Un espace topologique X est dit *localement
-compact* 
-    1. s’il est séparé 
-    1. et si tout point x élément de X admet un voisinage compact (autrement dit si x appartient à un ouvert relativement compact)
-
-- Exemples. Sont relativement compacts, tous les
-compacts, tous les espaces homéomorphes à $\mathbb{R}^n$. 
 
 
 
@@ -327,6 +332,7 @@ d’équivalence. Elle induit donc une application continue.
 
 #
 
+<!-- _transition: cube -->
 - Soit Y un espace topologique et soit $A \subset Y$. 
 On considère la relation d’équivalence suivante
 $y_1 ∼ y_2 \Leftrightarrow y_1 = y_2 \text{ ou } (y_1, y_2) \in A$
@@ -343,12 +349,14 @@ et est appelé **espace quotient de $Y$ par $A$.**
     1. $A$ = l'hemisphère sud.
 
 #
+<!-- _transition: cube -->
 ![bg left](./balloon.webp)
 -  **Exemple(s)** : $X = \mathbb{S}^2$ et 
     1. $E$ = l'equateur.
     1. $H$ = l'hemisphère sud.
 
 #
+<!-- _transition: slide -->
 ![bg left](./balloons2.webp)
 -  **Exemple(s)** : $X = \mathbb{S}^2$ et 
     1. $E$ = l'equateur.
@@ -358,6 +366,7 @@ et est appelé **espace quotient de $Y$ par $A$.**
 
 #
 
+<!-- _transition: cube -->
 ![bg left](./sphere.png)
 -  **Exemple(s)** : $X = \mathbb{S}^2$ et 
     1. $E$ = l'equateur.
@@ -365,6 +374,7 @@ et est appelé **espace quotient de $Y$ par $A$.**
 
 #
 
+<!-- _transition: slide -->
 - Soient X et Y deux espaces topologiques,
 $A \subset Y$ et $f : A \to X$ une application continue. 
 On définit une relation d’équivalence ∼ 
@@ -379,8 +389,10 @@ sur la somme disjointe $Z = X \sqcup Y$ par $z_1 ∼ z_2$
 et s’appelle le **recollement de $X$ à $Y$ le long de f.**
 
 #
-<!-- ![bg left height=200](./bubbles.png) -->
-![bg left height:650](./bubbles.png)
+
+<!-- _transition: cube -->
+![bg left height:650 ](./bubbles.png)
+<!-- ![bg left height:650 brightness: 0.1](./bubbles.png) -->
 -  **Exemple** : somme connexe de deux spheres
     - $H^-$ = l'hemisphère sud 
     - $H^+$ = l'hemisphère nord 
