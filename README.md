@@ -5,10 +5,10 @@ Institut Fourier, Grenoble.
 
 - The course will blatantly  borrow from [Vincent Borelli's
 course](https://math.univ-lyon1.fr/homes-www/borrelli/Espace_etudiant/).
-- The course will also use the books by Allen Hatcher, [Algebraic
-Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf)
-and John Stillwell, [Geometry of
-Surfaces](https://archive.org/details/geometryofsurfac0000stil/page/n235/mode/2up).
+- The course will also use the books by 
+    - Allen Hatcher, [Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf)
+    - John Stillwell, [Geometry of Surfaces](https://archive.org/details/geometryofsurfac0000stil/page/n235/mode/2up).
+    - John Milnor [Topology from a differentiable viewpoint](https://math.uchicago.edu/~may/REU2017/MilnorDiff.pdf)
 - As well as the web site [analysis situs](https://analysis-situs.math.cnrs.fr/).
 - Borelli tells me that
 [Topologicon](https://permamath.e-monsite.com/medias/files/petit-jean-pierre-le-topologicon.pdf) is very amusing and informative.
@@ -21,7 +21,7 @@ Surfaces](https://archive.org/details/geometryofsurfac0000stil/page/n235/mode/2u
 
 1. [Introduction](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/intro.html)
 1.   [D'alembert Gauss : homotopies](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/gauss_dalembert.html)
-1. [Revetements et quotients](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/revetements.html)
+1. [Revetements et quotients](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/revetments.html)
 
 1. Simplicial complexes
 2. Homotopy
