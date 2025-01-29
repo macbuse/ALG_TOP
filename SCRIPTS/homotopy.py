@@ -12,7 +12,6 @@ s = np.linspace(0, 2*np.pi, n_pts)
 def P(z):
     return z**2 + z + 1
 
-
 title = "Homotopy to a circle"
 # title = "Not a homotopy to a circle"
 Z = np.exp(1j*s)

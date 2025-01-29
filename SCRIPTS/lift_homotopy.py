@@ -13,7 +13,7 @@ Z = np.exp(1J*T)
 RC = 1 + .5*Z
 RL =  np.log(np.abs(RC)) + 1J*np.arctan2(RC.imag,RC.real)
 
-W = Z.real + 3.5J*Z.imag 
+W = Z.real + 3.5*1J*Z.imag 
 
 title = "Non affine homotopy to a circle"
 
@@ -36,10 +36,13 @@ gamma1 = go.Scatter(x=H[n_curves-1].real, y=H[n_curves-1].imag,
 origin = go.Scatter(x=[3], y=[0], mode="markers",
                     marker=dict(size=10, color="black"))
 
-gamma_hat = go.Scatter(x=HH[0].real, y=HH[0].imag, 
+gamma_hat_0 = go.Scatter(x=HH[0].real, y=HH[0].imag, 
                      mode="lines",
                      line=dict(width=2, color="blue"))
 
+gamma_hat_1 = go.Scatter(x=HH[1].real, y=HH[1].imag, 
+                     mode="lines",
+                     line=dict(width=2, color="blue"))
 #this is the range of the plot
 xm = -1
 xM = 6
@@ -53,8 +56,9 @@ box = go.Scatter(x=[xm, 1, 1, xm, xm], y=[ym, ym, yM, yM, ym],
 
 
 # Create figure
-fig = go.Figure(data=[gammat, gamma0, gamma1, origin, gamma_hat,
-                box])
+fig = go.Figure(data=[gammat, gamma0, gamma1, 
+                      gamma_hat_0,gamma_hat_1, 
+                      origin, box])
 
 
 fig.update_layout(width=700, height=700,

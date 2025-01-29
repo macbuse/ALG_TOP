@@ -1,3 +1,5 @@
+#! /home/macbuse/miniconda3/bin/python3.11
+
 import plotly.figure_factory as ff
 
 import numpy as np

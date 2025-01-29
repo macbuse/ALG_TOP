@@ -53,11 +53,12 @@ style: |
     - Projection stéréographique
     - Courbe de Peano
 1.  Montrer que la courbe est nul homotope.
-
+1.  [11 nets de cubes](https://www.open.edu/openlearncreate/mod/oucontent/view.php?id=153807&section=2.5)
 
 ![bg left](./nul_homo.png)
 <!-- <img src="./nul_homo.png" width="200"> -->
 <!-- <img src="./gauss_dalembert.png" width="600"> -->
+
 
 
 #
@@ -71,25 +72,55 @@ style: |
 
 # 
 
-### compacité
 
-- La compacité est une hypothèse contraignante. 
+<!-- _transition: cube -->
+
+### Compacité
+
+- La compacité est une hypothèse **contraignante**.
 Elle peut être remplacée par une propriété plus faible, 
 
-- **Définition.** Un espace topologique X est dit *localement
-compact* 
+- **Définition.** Un espace topologique X est dit **localement
+compact**
     1. s’il est séparé 
     1. et si tout point x élément de X admet un voisinage compact (autrement dit si x appartient à un ouvert relativement compact)
 
 - **Exemples :** Sont localement compacts, tous les
 compacts, tous les espaces homéomorphes à $\mathbb{R}^n$. 
 
+# Shape of the world
 
+<!-- _transition: slide -->
+
+#
+
+<!-- _transition: slide -->
+![](./flat_world.png)
+
+# ... shape of the universe
+
+<!-- _transition: slide -->
+[shape of the universe](https://en.wikipedia.org/wiki/Shape_of_the_universe)
+- Universe with zero curvature 
+In a universe with zero curvature, the local geometry is flat. The most familiar such global structure is that of Euclidean space, which is infinite in extent. Flat universes that are finite in extent include the torus and Klein bottle. Moreover, in three dimensions, there are 10 finite closed flat 3-manifolds, of which 6 are orientable and 4 are non-orientable.
+
+
+#
+<!-- _transition: cube -->
+
+
+![bg left height:800](./escher_ants.jpeg)
+
+
+-  Flat universes that are finite in extent include the torus and Klein bottle. Moreover, in three dimensions, there are 10 finite closed flat 3-manifolds, of which 6 are orientable and 4 are non-orientable.
+
+- [J. Weeks dodecahedral space](https://arxiv.org/abs/astro-ph/0310253)
+- [Wiki page](https://fr.wikipedia.org/wiki/Espace_dod%C3%A9ca%C3%A9drique_de_Poincar%C3%A9)
 
 
 # Revêtements
 
-<!-- _transition: cube -->
+<!-- _transition: slide -->
 
 |application|symmetrie|
 |---|---|
@@ -152,7 +183,7 @@ n'est pas un véritable revêtement car elle échoue à être localement homéom
 - $\{ \tilde{X} \text{ revetements de X} \} \longleftrightarrow \{ \text{sous-groupes }
  H < \pi_1(X) \}$
     - $\pi_1(X)$ est **le groupe fondamental de $X$.**
-$:=\{ \text{lacets avec le m\^eme  point de depart}
+$:=\{ \text{lacets avec un meme  point de depart $x_0$}
 \}/\text{homotopies}$
 
 - $\pi_1(X)$ est un invariant topologique de $X$.
