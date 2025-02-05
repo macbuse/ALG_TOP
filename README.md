@@ -22,8 +22,11 @@ course](https://math.univ-lyon1.fr/homes-www/borrelli/Espace_etudiant/).
 1. [Introduction](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/intro.html)
 1.   [D'alembert Gauss : homotopies](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/gauss_dalembert.html)
 1. [Revetements et quotients](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/revetments.html)
+    - [Revetements et quotients](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/revetments.html)
+    - [Quotients](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/quotients.html)
 
-1. Simplicial complexes
+
+1. [Simplicial complexes](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/simp.html)
 2. Homotopy
 1. Fundamental group
 1. The circle and Brouwer's fixed point theorem

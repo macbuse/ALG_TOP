@@ -155,6 +155,18 @@ $$
 
 #
 
+## Le plan projectif
+
+- Le plan projectif réel $\mathbb{RP}^2$ est l’espace quotient de
+$\mathbb{R}^2 \setminus \{0\}$ par la relation d’équivalence ∼
+définie par :
+$$x ∼ y \Leftrightarrow x = λy, λ > 0$$
+
+- L’espace quotient $\mathbb{RP}^2$ est homéomorphe à la 
+'espace quotient de sphère $\mathbb{S}^2$  par l’antipodalité.
+
+#
+
 
 - **Proposition de transfert de continuité au quotient.**
 Soit f : Y → Z une application continue telle que 
@@ -181,7 +193,25 @@ Or par construction $f = \bar{f}\circ \pi$  :
 $$\pi^{−1}(\bar{f}^{−1}(U)) = (\bar{f}\circ \pi)^{−1}(U) = f^{−1}(U)$$
 - est **ouvert** car f **continue**. $\Box$
 
+
+# 
+
+## Suspension d'un homéomorphisme
+
+- **Définition.** Soit $f : X \rightarrow X$ un homéomorphisme.
+La suspension de f est l’espace quotient de $X \times [0, 1]$ 
+par la relation d’équivalence ∼ définie par :
+$$(x, 0) ∼ (f(x), 1)$$
+
+
 # Exercices
+
+1. Montrer que à homotopy près, il y a exactement 2 homéomorphismes de l'intervalle $[0, 1]$ dans lui-même qui fixent les
+extrémités. Et $\mathbb{S}^1$ ?
+
+1. Montrer que le ruban de mobius est la suspension d'un
+   homéomorphisme de l'intervalle.
+
 
 1. Démontrer la proposition : 
 
@@ -228,6 +258,12 @@ homéomorphe à un tore.
 
 - Quelle est la nature topologique du second carré avec les
 identifications ? et du troisième ?
+
+#
+
+Découper et faire les identifications suivantes :
+
+![crosscap](./IMAGES/crosscap.png)
 
 
 
