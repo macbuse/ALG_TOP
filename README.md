@@ -27,7 +27,7 @@ course](https://math.univ-lyon1.fr/homes-www/borrelli/Espace_etudiant/).
 
 
 1. [Simplicial complexes](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/simp.html)
-2. Homotopy
+2. [Homotopy](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/homotop.html)
 1. Fundamental group
 1. The circle and Brouwer's fixed point theorem
 1. Van Kampen

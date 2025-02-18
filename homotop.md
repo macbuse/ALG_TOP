@@ -1,16 +1,77 @@
-**Définition**.– Soient X et Y deux espaces topologiques et
-f, g : X → Y deux applications continues. Une HOMOTOPIE
-ENTRE f ET g est une application continue
-$H : X × [0, 1] \to  Y$
-telle que
-- ∀x ∈ X, H(x, 0) = f(x)
-- ∀x ∈ X, H(x, 1) = g(x)
+<!--
+theme: gaia
+class: gaia lead
+headingDivider: 1
+paginate: true
+header: UGA 2025
+footer: 
+backgroundImage: linear-gradient(-20deg, rgba(0, 0, 0, 0.6), transparent)
+_paginate: false
+_header: ''
+_footer: ''
 
-Soit A ⊂ X. On dit que l’homotopie H est RELATIVE À A si
+style: |
+  @keyframes marp-outgoing-transition-vertical-scroll {
+    from { transform: translateY(0%); }
+    to { transform: translateY(-100%); }
+  }
+  @keyframes marp-incoming-transition-vertical-scroll {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0%); }
+  }
+
+  @keyframes marp-outgoing-transition-vflip {
+    0% { animation-timing-function: ease-in; }
+    50% {
+      transform: perspective(100vw) translateZ(-100vw) rotateX(-90deg);
+      opacity: 0.5;
+      animation-timing-function: step-end;
+    }
+    100% { opacity: 0; }
+  }
+  @keyframes marp-incoming-transition-vflip {
+    0% {
+      animation-timing-function: step-start;
+      opacity: 0;
+    }
+    50% {
+      transform: perspective(100vw) translateZ(-100vw) rotateX(90deg);
+      opacity: 0.5;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  header, footer { text-align: center; color: currentcolor; }
+  section.small-code pre { font-size: 68%; }
+
+-->
+
+
+
+# Homotopie
+<!-- _transition: glow -->
+greg mc shane
+
+# blank
+
+
+#
+
+- **Définition**.– Soient X et Y deux espaces topologiques et
+$f, g : X \to Y$ deux applications continues. 
+Une HOMOTOPIE ENTRE f ET g est une application continue
+$H : X × [0, 1] \to  Y$ telle que
+    - $\forall x \in X, H(x, 0) = f(x)$
+    - $\forall x \in X, H(x, 1) = g(x)$
+
+- Soit A ⊂ X. On dit que l’homotopie H est RELATIVE À A si
 de plus
-- ∀x ∈ A, ∀t ∈ [0, 1], H(x, t) = f(x) = g(x)
-Observons que pour qu’une telle homotopie soit possible il
+    - $\forall x \in A, \forall t \in [0, 1], H(x, t) = f(x) = g(x)$
+- Observons que pour qu’une telle homotopie soit possible il
 faut nécessairement $f|_A = g|_A$.
+
+#
+
 
 
 ### Homotopies d’applications
