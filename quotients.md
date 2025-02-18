@@ -158,7 +158,7 @@ $$
 ## Le plan projectif
 
 - Le plan projectif réel $\mathbb{RP}^2$ est l’espace quotient de
-$\mathbb{R}^2 \setminus \{0\}$ par la relation d’équivalence ∼
+$\mathbb{R}^3 \setminus \{0\}$ par la relation d’équivalence ∼
 définie par :
 $$x ∼ y \Leftrightarrow x = λy, λ > 0$$
 
@@ -223,7 +223,7 @@ extrémités. Et $\mathbb{S}^1$ ?
 #
 
 Pour les courbes dans la figure ci-dessous, 
-1. dire si l'application $z \mapsto |z|$ est un revetement sur lecercle.
+1. dire si l'application $z \mapsto z/|z|$ est un revetement sur lecercle.
 1. si oui calculer le degré 
 
 ![degree height:400](./IMAGES/degrees.png)

@@ -25,7 +25,6 @@ v = np.linspace(0,2*np.pi,yw)
 # ring = np.array([[0]*yw,4 + np.cos(v), np.sin(v)])
 
 turns = 1.5
-turns = 1
 
 tv = np.array([0,2,0]).reshape(3,1)
 ring = np.array([[0]*yw,[0]*yw, v/np.pi -1])
