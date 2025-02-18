@@ -46,9 +46,23 @@ style: |
 
 -->
 
-# Simplicial complexes
+
+
+# Complexes
 <!-- _transition: glow -->
 greg mc shane
+
+
+#
+
+1. Simplicial complexes
+1. CW-complexes
+1. [exos](./exos_simplicial.pdf)
+
+
+# Simplicial Complexes
+
+[examples](https://www.google.com/search?sca_esv=6fe806cc0ee527f3&rlz=1CARGFB_enFR1045FR1045&sxsrf=AHTn8zpQKuoBL19lt_5sBH4RyrcqbCkWsQ:1739903884191&q=simplicial+complexes&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBr1qLlHFB6ZBcx-Arq68_wc6NXO-nGlA3Ez9ZCbR-p2q5Xyuflpa2GIzOHuZ2yzzMC6M16uJyoElFnWbazryb4-qpeOV-ae4bedTiIOAuMRemV38jVBPHLD3RKDlHlVE9hn1PNw&sa=X&ved=2ahUKEwizi9eH782LAxUrV6QEHQSlDFQQtKgLegQIGRAB#vhid=0nsdpvV6a5dQMM&vssid=mosaic)
 
 
 <!-- # -->
@@ -131,8 +145,6 @@ topologique discret
     - Un complexe simplicial de dimension 1 est un graphe
 
 
-
-
 #
 
 
@@ -144,6 +156,11 @@ topologique discret
 | Dodécaèdre            |               | 
 | Icosaèdre             |               | 
 | Sphère             | OUI/NON             | 
+
+
+# Bouquets
+
+![ width:800](./IMAGES/bouquet.png)
 
 #
 
@@ -178,8 +195,7 @@ et de Y.
 
 #
 
-- **Exemple 1**.– Soit K un complexe simplicial connexe et fini
-de dimension 1 et S l’ensemble de ses sommets (=face de
+- **Exemple 1**.– Soit K un complexe simplicial connexe et fini de dimension 1 (graphe) et S l’ensemble de ses sommets (=face de
 dimension 0). L’espace |K|/S est homéomorphe à un
 bouquet de cercles dont le nombre de cercles est celui des
 arêtes (=face de dimension 1) de K.
@@ -188,6 +204,9 @@ $\mathbb{S}^2/A$ est un bouquet de deux sphères $\mathbb{S}^2 \vee \mathbb{S}^2
 .
 - **Exemple 3**.– Soit $A \subset \mathbb{S}^2$ l’ensemble des l’ensemble des arêtes de la triangulation par l’icosaèdre. L’espace $\mathbb{S}^2/A$ est un bouquet de 
 vingt sphères.
+
+
+# CW-complexes
 
 #
 
