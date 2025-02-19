@@ -3,8 +3,9 @@
 This is the repository for the course [Algebraic Topology](https://analysis-situs.math.cnrs.fr/Qu-est-ce-que-la-topologie-algebrique.html) 2024 at the
 Institut Fourier, Grenoble. 
 
-- The course will blatantly  borrow from [Vincent Borelli's
-course](https://math.univ-lyon1.fr/homes-www/borrelli/Espace_etudiant/).
+- The course will blatantly  borrow from [Vincent Borelli'spaces course](https://math.univ-lyon1.fr/homes-www/borrelli/Espace_etudiant/).
+- But I am mostly motivated by [Conway and Thurston's Geometry and
+Imagination](https://arxiv.org/pdf/1804.03055) 
 - The course will also use the books by 
     - Allen Hatcher, [Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf)
     - John Stillwell, [Geometry of Surfaces](https://archive.org/details/geometryofsurfac0000stil/page/n235/mode/2up).

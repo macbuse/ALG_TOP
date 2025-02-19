@@ -1,3 +1,5 @@
+#! /home/macbuse/miniconda3/bin/python3.11
+
 # https://community.plotly.com/t/show-edges-of-the-mesh-in-a-mesh3d-plot/33614/6
 # https://plotly.com/~empet/14749/mesh3d-with-intensities-and-flatshading/#/
 
@@ -33,7 +35,8 @@ i, j, k = faces.T
 pl_mygrey=[0, 'rgb(153, 153, 153)'], [1., 'rgb(255,255,255)']
 # Create the mesh for the octahedron
 
-my3dmesh = go.Mesh3d( x=x, y=y, z=z, 
+mvim.api.nvim_set_keymap('n', '<leader>pp', ':w<CR>:!python3 %<CR>', { noremap = true, silent = true })
+y3dmesh = go.Mesh3d( x=x, y=y, z=z, 
  i=i, j=j, k=k,
     colorscale=pl_mygrey, 
     intensity= z,

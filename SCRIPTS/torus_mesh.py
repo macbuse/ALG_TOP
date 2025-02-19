@@ -8,14 +8,14 @@ import numpy as np
 xw, yw = 20,11
 
 u = np.linspace(0, 2*np.pi, xw) 
-v = .5*np.linspace(0,2*np.pi, yw) - np.pi/2
+v = np.linspace(0,2*np.pi, yw) - np.pi/2
 u,v = np.meshgrid(u,v)
 u = u.flatten()
 v = v.flatten()
 
-x = (3 + (np.cos(v)))*np.cos(u)
-y = (3 + (np.cos(v)))*np.sin(u)
-z = np.sin(v)
+# x = (3 + (np.cos(v)))*np.cos(u)
+# y = (3 + (np.cos(v)))*np.sin(u)
+# z = np.sin(v)
 
 x = (3 + (np.cos(v)))*np.cos(u)
 y = (3 + (np.cos(v)))*np.sin(u)
