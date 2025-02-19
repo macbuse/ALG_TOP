@@ -55,6 +55,10 @@ greg mc shane
 
 #
 
+- Hatcher pp 110 (pdf)
+- Exo recollement du carré pp 111 (pdf)
+
+
 1. Simplicial complexes
 1. CW-complexes
 1. [exos](./exos_simplicial.pdf)
