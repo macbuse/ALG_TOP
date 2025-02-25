@@ -59,6 +59,15 @@ greg mc shane
 - rétractes
 - rétraction
 - rétraction par déformation
+- [exos](./exos_homotopy.pdf)
+
+#
+
+## Idée
+
+- homotopie = chemin continu qui relie deux fonctions continues ($f \simeq g$)
+- $C^0(X, Y)/\simeq$ est l'ensemble des classes d'homotopie
+-  = composante connexe par arc de $C^0(X, Y)$
 
 
 # Homotopies d'applications
@@ -111,7 +120,7 @@ est une homotopie relative joignant g à f.
 
 #
 
-### Transivité
+### Transitivité
 
 -  $H_1$ est une homotopie joignant $f$ à $g$, 
 -  $H_2$ est une homotopie joignant $g$ à $h$, 
@@ -161,6 +170,15 @@ $g \in C^0 (X, Y).$ telle que $f \circ g \simeq id_Y$ et $g \circ f \simeq id_X$
     - et que X et Y ont MÊME TYPE D’HOMOTOPIE 
     ou qu’ils sont HOMOTOPIQUEMENT ÉQUIVALENTS. 
     - On note $X \simeq Y$.
+
+#
+
+Deux espaces sont homotopiquement équivalents si et seulement s'ils sont tous deux **rétracts par déformation** d'un même espace.
+
+[Source](https://fr.wikipedia.org/wiki/%C3%89quivalence_d%27homotopies)
+
+- Un cercle est homotopiquement équivalent au plan privé d'un point et au ruban de Möbius.
+- Le tore $\mathbb{T}^2$ privée d'un point est homotopiquement équivalente à un bouquet de deux cercles.
 
 #
 
@@ -294,7 +312,6 @@ $f \simeq c_X$. De meme $g \simeq c_X$ et par transitivité $f \simeq g$
 # Exercices
 
 #
-
 
 1. On suppose que X et Y sont homéomorphes. Montrer
 qu’ils ont même type d’homotopie. Réciproque ?
