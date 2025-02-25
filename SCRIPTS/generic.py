@@ -1,3 +1,5 @@
+#! /home/macbuse/miniconda3/bin/python3.11
+
 # https://community.plotly.com/t/show-edges-of-the-mesh-in-a-mesh3d-plot/33614/6
 # https://plotly.com/~empet/14749/mesh3d-with-intensities-and-flatshading/#/
 
