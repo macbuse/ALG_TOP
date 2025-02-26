@@ -54,6 +54,8 @@ greg mc shane
 
 # 
 
+**Hatcher Chapiitre 0**
+
 - homotopies d'applications
 - équivalences d'homotopie
 - rétractes
@@ -65,8 +67,9 @@ greg mc shane
 
 ## Idée
 
-- homotopie = chemin continu qui relie deux fonctions continues ($f \simeq g$)
-- $C^0(X, Y)/\simeq$ est l'ensemble des classes d'homotopie
+- homotopie = chemin continu qui relie 
+deux fonctions continues ($f \simeq g$)
+- $[X,Y]:= (C^0(X, Y)/\simeq)$ est l'ensemble des classes d'homotopie
 -  = composante connexe par arc de $C^0(X, Y)$
 
 
@@ -92,10 +95,9 @@ faut nécessairement $f|_A = g|_A$.
 
 
 - **Proposition.**– Deux applications $f, g : X \to \mathbb{R}^n$
-homotopes sont homéomorphes.
-n sont toujours homotopes.
+ sont toujours homotopes. Autrement dit, l’ensemble $[X, \mathbb{R}^n]$ est l'unique composante connexe par arc de $C^0(X, \mathbb{R}^n)$.
 
-**Démonstration.** Il suffit de considérer
+- **Démonstration.** Il suffit de considérer
 $$H(x, t) = t f(x) + (1 − t)g(x)$$
 - Cette démonstration reste valide si les applications
 $f, g : X \to Y$ ou $Y \subset R^n$ sous-espace convexe
@@ -152,6 +154,11 @@ H_2(x, 2t - 1), & \text{si } \frac{1}{2} \leq t \leq 1
     le paramètre de temps.
 
 #
+$$H(x,t) =
+\begin{cases}
+H_1(x, 2t), & \text{si } 0 \leq t \leq \frac{1}{2} \\
+H_2(x, 2t - 1), & \text{si } \frac{1}{2} \leq t \leq 1
+\end{cases}$$
 
 ### **Vérifications**
 * $H(x,0) = H_1(x,0) = f(x)$ ✅
@@ -159,19 +166,47 @@ H_2(x, 2t - 1), & \text{si } \frac{1}{2} \leq t \leq 1
 * $H(x,\frac{1}{2}) = H_1(x,1) = g(x) = H_2(x,0)$,
 * donc la transition entre $H_1$ et $H_2$ est bien continue ✅
 
+
 #
-### Équivalence d’homotopie 
+
+### Groupes d'homotopie des sphères
+
+- $\pi_n(\mathbb{S}^m):= [\mathbb{S}^n, \mathbb{S}^m]$ admet une structure de groupe abélien.
+
+[Source](https://fr.wikipedia.org/wiki/Groupes_d%27homotopie_des_sph%C3%A8res)
+
+|$\pi_n(S^m)$  | $n < m$  | $n = m$  | $n = m+1$  | $n > m+1$ (quelques cas) |
+|----------------|-------------|-------------|-------------|------------------|
+| $\pi_1(S^1)$  | $\mathbb{Z}$ | - | - | - |
+| $\pi_2(S^2)$  | $0$ | $\mathbb{Z}$ | - | - |
+| $\pi_3(S^2)$  | $\mathbb{Z}$ | - | $\mathbb{Z}$ | - |
+| $\pi_3(S^3)$  | $0$ | $\mathbb{Z}$ | $\mathbb{Z}$ | - |
+
+#
+
+La structure générale suit les règles suivantes :
+- $\pi_n(S^m) = 0$ pour $n < m$.
+- $\pi_m(S^m) = \mathbb{Z}$ grâce à l'application identité.
+- $\pi_{m+1}(S^m) = \mathbb{Z}$ (fibration de Hopf pour $S^2$ et $S^3$).
+- Pour $n > m+1$, les groupes deviennent beaucoup plus compliqués, avec des termes de torsion.
+
+
+# Équivalence d’homotopie 
+
+#
 - **Définition.**– Soit $f \in C^0 (X, Y).$ On dit que f est 
-une ÉQUIVALENCE D’HOMOTOPIE s’il existe une application
+une **équivalence d’homotopie** s’il existe une application
 $g \in C^0 (X, Y).$ telle que $f \circ g \simeq id_Y$ et $g \circ f \simeq id_X$ .
 
 - Si une telle application existe, on dit 
-    - que g est un INVERSE HOMOTOPIQUE DE f 
-    - et que X et Y ont MÊME TYPE D’HOMOTOPIE 
-    ou qu’ils sont HOMOTOPIQUEMENT ÉQUIVALENTS. 
-    - On note $X \simeq Y$.
+    - que g est un **inverse homotopique** de f 
+    - et que X et Y ont **même type d’homotopie**
+    ou qu’ils sont **homotopiquement équivalents.** 
+    - on note $X \simeq Y$.
 
 #
+
+### FAIT
 
 Deux espaces sont homotopiquement équivalents si et seulement s'ils sont tous deux **rétracts par déformation** d'un même espace.
 
