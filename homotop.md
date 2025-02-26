@@ -109,7 +109,7 @@ alors l’interpolation linéaire entre f et g ne fournit plus une homotopie. Il
 
 
 - **On définit** une relation binaire $\simeq$  dans 
-$C_0(X, Y)$ par $f \simeq g \Leftrightarrow$ il existe une homotopie entre f et g
+$C^0(X, Y)$ par $f \simeq g \Leftrightarrow$ il existe une homotopie entre f et g
 - Similairement, $f \simeq_A g$ si l’homotopie est relative à A.
 
 - **Proposition**.– Les relations $\simeq$ et $\simeq_A$ sont des relations d’équivalence.
@@ -189,6 +189,8 @@ La structure générale suit les règles suivantes :
 - $\pi_m(S^m) = \mathbb{Z}$ grâce à l'application identité.
 - $\pi_{m+1}(S^m) = \mathbb{Z}$ (fibration de Hopf pour $S^2$ et $S^3$).
 - Pour $n > m+1$, les groupes deviennent beaucoup plus compliqués, avec des termes de torsion.
+
+[hopf fibration](https://www.youtube.com/watch?v=PYR9worLEGo)
 
 
 # Équivalence d’homotopie 
