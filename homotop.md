@@ -54,7 +54,7 @@ greg mc shane
 
 # 
 
-**Hatcher Chapiitre 0**
+**Hatcher Chapitre 0**
 
 - homotopies d'applications
 - équivalences d'homotopie
