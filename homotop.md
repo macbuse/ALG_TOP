@@ -196,7 +196,7 @@ La structure générale suit les règles suivantes :
 # Équivalence d’homotopie 
 
 #
-- **Définition.**– Soit $f \in C^0 (X, Y).$ On dit que f est 
+- **Définition.** Soit $f \in C^0 (X, Y).$ On dit que f est 
 une **équivalence d’homotopie** s’il existe une application
 $g \in C^0 (X, Y).$ telle que $f \circ g \simeq id_Y$ et $g \circ f \simeq id_X$ .
 
@@ -243,7 +243,7 @@ est l’application $r : \mathbb{R}^n \setminus \{O\} \to S^{n−1}$ telle que $
 précédents sont des rétractions fortes par déformation.
 
 
-- **Proposition.**– $r : X → A$ est une rétraction par déformation
+- **Proposition.**– $r : X \to A$ est une rétraction par déformation
 alors c'est une équivalence d'homotopie et donc $A \simeq X$.
 
 - **Démonstration.**– Soit $i : A \in X$ l’inclusion. On a 
@@ -270,7 +270,7 @@ connexe. Contradiction
 
 ![width:1000](./IMAGES/retractions.png)
 
-- **Exemple d’application 2.**– Les trois CW-complexes
+- **Exemple d’application 2.** Les trois CW-complexes
 figurés ci-dessus ont même type d’homotopie. En effet, ce
 sont tous les trois des  rétracts par déformation la sphère
 privée de trois disques disjoints. On peut les décrire
@@ -289,7 +289,6 @@ le type d’homotopie d’un singleton $\{pt\}$.
 ## Exemples.
 
 - **Exemples.** – Les domaines étoilés sont contractiles, en p
-
 
 #
 
@@ -321,10 +320,6 @@ Autrement dit, l’ensemble $[X, Y]$ est un singleton.
 obtenu en début de leçon énonçant que si Y est partie
 convexe de $\mathbb{R}^n$ alors deux applications $f, g \in C^0(X, Y)$ sont toujours homotopes.
 
-
-
-
-
 #
 
 - **Lemme**-  X est contractile ssi il existe 
@@ -334,9 +329,6 @@ $x \mapsto  c_X (x) = x_0$ est homotope à $id_X$.
 - **Proposition.** – Si Y est contractile et si $f, g \in C^0(X, Y)$ 
 alors f et g sont homotopes $f \simeq g$. 
 
-
-
-
 - **Démonstration.** – Supposons Y contractile. D’après le lemme, il existe 
     - $y_0  \in Y$ et une homotopie
     - $H : Y × [0, 1] \to Y$ joignant $id_Y$ à application constante $y \mapsto y_0$.
@@ -344,7 +336,6 @@ alors f et g sont homotopes $f \simeq g$.
 - Alors $(x,t) \mapsto H(f(x), t)$ est une homotopie joignant f à
 l’application constante $x \mapsto c_X(x) = y_0$. Ainsi
 $f \simeq c_X$. De meme $g \simeq c_X$ et par transitivité $f \simeq g$
-
 
 # Exercices
 

@@ -29,8 +29,8 @@ Imagination](https://arxiv.org/pdf/1804.03055)
 
 
 1. [Simplicial complexes](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/simp.html)
-2. [Homotopy](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/homotop.html)
-1. Fundamental group
+1. [Homotopy](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/homotop.html)
+1. [Fundamental group](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/gpe_fonda.html)
 1. The circle and Brouwer's fixed point theorem
 1. Van Kampen
 1. Zoology of fundamental groups
