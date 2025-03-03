@@ -65,10 +65,10 @@ greg mc shane
     1. $X = \tilde{X}/\pi_1(X, x_0)$
 
 
+# La concaténation des chemins
+
 #
 
-
-### La concaténation des chemins
 - **Définition**.– Soit X un espace topologique et $x_0, x_1 \in X$. 
 - On appelle **chemin joignant** $x_0$ à $x_1$ tout application continue 
 $\gamma : [0, 1] \to X$ telle que $\gamma(0) = x_0$ et $\gamma(1) = x_1$.
@@ -153,24 +153,35 @@ Alors $\gamma * \bar{\gamma} \simeq_\partial c_{x_0} \text{ et } \bar{\gamma} * 
 ### Inverses de chemins
 
 
+- **Proposition 2.**– Soit $\gamma \in L(X, x_0, x_1)$. 
+Alors $\gamma * \bar{\gamma} \simeq_\partial c_{x_0} \text{ et } \bar{\gamma} * \gamma \simeq_\partial c_{x_1}.$
 
 
 - **Démonstration**.– L’application 
 
 $$H(s, t) = \begin{cases}
-\gamma(2s) & \text{si } s \leq \frac{1}{2} - \frac{t}{2}, \\
-\gamma(2 - 2s) & \text{si } s \geq \frac{1}{2} + \frac{t}{2}
+\gamma(2s) & \text{si } s \leq  \frac{t}{2}, \\
+\gamma(t) & \text{si } \frac{t}{2}\leq s \leq 1 - \frac{t}{2}, \\
+\bar{\gamma}(2s - 1) & \text{si } s \geq 1 - \frac{t}{2}
 \end{cases}$$
 
 - définit une homotopie entre $\gamma * \bar{\gamma}$ et $c_{x_0}$. $\blacksquare$
 
 #
 
+![height: 80%](./IMAGES/homotopy2cst.png)
+
+- Description visuelle de l’homotopie H. 
+    - La couleur rouge souligne les points envoyés sur $x_0$. 
+    - La verticale t = 0 correspond à $c_{x_0}$
+    - et la verticale t = 1 à la concatenation $\gamma * \bar{\gamma}$.
+
+#
+
 ### Associativité de la concaténation
 
 - **Proposition 3 .** Soient 
-$\gamma_0 \in L(X, x_0, x_1)$, $\gamma_1 \in L(X, x_1, x_2)$ et
-$\gamma_2 \in L(X, x_2, x_3)$. 
+$\gamma_0 \in L(X, x_0, x_1)$, $\gamma_1 \in L(X, x_1, x_2)$ et $\gamma_2 \in L(X, x_2, x_3)$. 
 Alors $
 (\gamma_0 * \gamma_1) * \gamma_2 \simeq_\partial \gamma_0 * (\gamma_1 * \gamma_2).$
 
@@ -185,6 +196,12 @@ H(s, t) = \begin{cases}
 \end{cases}
 $$
 - est une homotopie entre $(\gamma_0 * \gamma_1) * \gamma_2$ et $\gamma_0 * (\gamma_1 * \gamma_2)$. $\blacksquare$
+
+#
+
+![height: 80%](./IMAGES/homotopy_associative.png)
+
+Description visuelle de l’homotopie H.
 
 #
 
