@@ -65,6 +65,29 @@ greg mc shane
     1. $X = \tilde{X}/\pi_1(X, x_0)$
 
 
+#
+
+1. $\mathbb{S}^1 = \mathbb{R}/\mathbb{Z}$.
+1. $\mathbb{T}^2 = \mathbb{S}^1 \times \mathbb{S}^1 = \mathbb{R}^2 / (\mathbb{Z}\times\mathbb{Z})$
+1. $\mathbb{S}^1 \vee \mathbb{S}^1 = \text{un arbre} / (\mathbb{Z}*\mathbb{Z}).$
+    - $\mathbb{Z}\times\mathbb{Z}$ groupe libre abélien de rang 2.
+    - $\mathbb{Z}*\mathbb{Z}$ groupe libre (non abélien) de rang 2.
+
+![wedge](./IMAGES/wedge2circles.png)
+
+- CW complexe de dimension 1
+    - 1 0-cellule
+    - 2 1-cellules
+
+
+#
+
+![height:150](./IMAGES/wedge2circles.png)
+- [Bass, Serre : arbres, amalgames et $sl_2$](http://www.numdam.org/item/AST_1983__46__1_0.pdf)
+- [geometric group theory](https://en.wikipedia.org/wiki/Geometric_group_theory)
+![bg left width:100%](./IMAGES/tree.jpeg)
+
+
 # La concaténation des chemins
 
 #
@@ -75,9 +98,17 @@ $\gamma : [0, 1] \to X$ telle que $\gamma(0) = x_0$ et $\gamma(1) = x_1$.
 - On appelle LACET BASÉ EN $x_0$ tout chemin tel que
 $\gamma(0) = \gamma(1) = x_0$.
 
+#
+
 - **Notations.**– On note
     - $L(X, x_0, x_1)$ l’ensemble des chemins joignant $x_0$ à $x_1$ et
     - $\Omega(X, x_0)$ l’ensemble des lacets basés en $x_0$.
+
+- **Définition.–** On dit qu’un espace topologique X est
+**connexe par arcs** si tout couple de point 
+$(x_1, x_2) \in X \times X$
+peut être joint par un chemin X, autrement dit si 
+$L(X, x_1, x_2)$ est non vide.
 
 
 #
@@ -199,7 +230,7 @@ $$
 
 #
 
-![height: 80%](./IMAGES/homotopy_associative.png)
+![height: 80%](./IMAGES/homotopy_associativity.png)
 
 Description visuelle de l’homotopie H.
 
@@ -220,6 +251,12 @@ $H(s, t) = \begin{cases}
 x_1 & \text{si } s \in [\frac{t+1}{2}, 1]
 \end{cases}$
 est une homotopie entre $(\gamma * c_{x_1})$ et $\gamma$
+
+#
+
+![height: 90%](./IMAGES/homotopy_identity.png)
+
+Description visuelle de l’homotopie H.
 
 #
 
@@ -270,4 +307,90 @@ $$\pi_1(X, x_0) := \Omega(X, x_0)/ \simeq_\partial$$
     $\blacksquare$
 
 
+#
+
+- Notons que l’on ne dit pas : "le groupe fondamental de la
+paire (X, x0)". Ceci est justifié par la proposition suivante.
+
+- **Proposition 5**.– Soit 
+$u : [0, 1] \to X$ un chemin joignant
+un chemin joignant $x_0$ à $x_1$.
+On note $x_0 := u(0)$ et 
+$x_1 := u(1)$. Alors, l’application
+$$\beta_u :\pi_1(X, x_0) \to \pi_1(X, x_1)$$
+$$[γ] \mapsto [\bar{u} ∗ γ ∗ u]$$
+- est isomorphisme de groupes.
+
+Démonstration ??
+
+
+#
+
+- **Corollaire 1**.– Soient X connexe par arcs et 
+$x_0, x_1 ∈ X$.
+
+Alors $\pi_1(X, x0)$ et $\pi_1(X, x1)$ sont isomorphes.
+- **Observation.** En général, cet isomorphisme n’est pas
+canonique car $\beta_u$ dépend de la classe dans $L(X, x_0, x1)$ du
+chemin u choisi pour joindre 
+$x_0$ à $x_1$.
+
+- **Définition.** Un espace topologique X est dit **simplement
+connexe** s’il est connexe par arcs et s’il existe 
+$x_0 ∈ X$ tel que $\pi_1(X, x_0) = {[c_{x_0}]}$
+
+
+#
+
+
+- **Remarque.**– D’après le corollaire 1, si X est simplement
+connexe, alors pour tout point x ∈ X, on a π1(X, x) = {[cx ]}.
+
+
+- **Exemple 1.**– L’espace X = {x0} est simplement connexe.
+- **Exemple 2.**– Tout espace contractile X est simplement
+connexe. L’homotopie joignant 
+$\gamma ∈ \Omega(X, x_0)$ à $c_{x_0}$ est induite
+par l’homotopie joignant 
+$id_X$ à la fonction constante $c_{x_0}: x\mapsto x_0$.
+
+<!-- idX à i ◦ r où i : {x0} ⊂ X et -->
+<!-- r : X → {x0}. -->
+
+#
+
+
+- Soient $f : X → Y$ une application continue,
+et $x_0 ∈ X$ et $y_0 = f(x_0)$. On définit une application
+$$f_* : \pi_1(X, x_0) \to \pi_1(Y, y_0)$$
+$$f([\gamma]) := [f \circ \gamma].$$
+- cette application est bien définie car si $\gamma \simeq_\partial
+\delta$ alors 
+$f \circ \gamma \simeq_\partial f \circ \delta$.
+
+- **Proposition 6.**– L’application $f_∗$ est un morphisme de
+groupes.
+
+
+#
+
+- **Proposition 7.**– On a $(id_X)_∗ = id_{\pi_1(X, x_0)}$ 
+
+- Soient $f_1, f_2 ∈ C^0((X, x_0), (Y, y_0))$ Alors
+$$f_1 \simeq_\partial f_2 \Rightarrow f_{1*} = f_{2*}$$
+- Soient $f ∈ C^0((X, x_0), (Y, y_0))$ et $g ∈ C^0((Y, y_0), (Z, z_0))$ alors
+$$(g \circ f)_∗ = g_∗ \circ f_∗$$
+- En particulier, si f est inversible alors $f_∗$ l’est et
+$$f_{∗}^{-1} = (f^{-1})_{∗}$$
+
+#
+
+
+- **Théorème 2.**– Soient X et Y connexes par arcs. 
+Si X et Y ont même type d’homotopie alors 
+$\pi_1(X, x_0)$ et $\pi_1(Y, y_0)$ sont isomorphes 
+pour tout choix $(x_0, y_0) ∈ X \times Y$ .
+
+-  En particulier si X et Y sont homéomorphes (et c.p.a.)
+alors leurs groupes fondamentaux sont isomorphes.
 
