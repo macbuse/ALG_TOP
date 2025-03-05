@@ -122,6 +122,12 @@ $L(X, x_1, x_2)$ est non vide.
     - $\forall t \in [0, 1], H(0, t) = x_0$ et $H(1, t) = x_1$
     - et $H(s, 0) = \gamma_1(s)$ et $H(s, 1) = \gamma_2(s)$.
 
+# 4 propositions
+
+- homotopie respecte la concaténation
+- concatenation avec le chemin inverse triviale
+- associativité de la concaténation
+- élément neutre
 
 
 #
@@ -236,9 +242,9 @@ Description visuelle de l’homotopie H.
 
 #
 
-### elément neutre
+### élément neutre
 
-- **Proposition 3.**– Soit $\gamma \in L(X, x_0, x_1)$ 
+- **Proposition 4.**– Soit $\gamma \in L(X, x_0, x_1)$ 
 Alors $\gamma * c_{x_1} \simeq_\partial \gamma \text{ et } c_{x_0} \gamma \simeq_\partial \gamma.$
 
 - On va démontrer la première égalité
@@ -393,4 +399,55 @@ pour tout choix $(x_0, y_0) ∈ X \times Y$ .
 
 -  En particulier si X et Y sont homéomorphes (et c.p.a.)
 alors leurs groupes fondamentaux sont isomorphes.
+
+#
+
+
+- **Démonstration**.– Puisque $X \simeq Y$, il existe 
+$f ∈ C^0(X, Y)$ et $g ∈ C^0(Y, X)$ tels que
+$g \circ f \simeq id_X$ et $f \circ g \simeq id_Y$.
+Nous
+allons montrer que
+    - $g_∗ ◦ f_∗ : \pi_1(X, x_0) → \pi_1(X, g(f(x_0)))$
+    -  $f_∗ ◦ g_∗ : \pi_1(Y, y_0) → \pi_1(Y, f(g(y_0)))$
+
+sont des isomorphismes. Ceci implique en effet que $f_∗$ et 
+$g_∗$ sont des isomorphismes.
+
+#
+
+- Montrons d’abord que $g_∗ \circ  f_∗ = \beta_u$ 
+où u le chemin joignant $x_0$ à $g(f(x_0))$ 
+défini par $u(s) = H(x_0, 1 − s)$
+ où H est l’homotopie joignant $g \circ f$ à $id_X$ .
+- Soit $\gamma \in \Omega(X, x_0)$. L’application F définie par
+
+$$F(s, t) = \begin{cases}
+\bar{u}(3s) & \text{si } s \leq \frac{t}{3}, \\
+H(\gamma(\frac{3s − t}{3-2t})) & \text{si } \frac{t}{3} \leq s \leq 1 −
+\frac{t}{3}, \\
+u(3s − 2) & \text{si } s \geq 1 − \frac{t}{3}
+\end{cases}$$
+est une homotopie entre $g \circ f \circ \gamma = H(.,0$ et $\bar{u} ∗ \gamma ∗ u = H(.,1)$.
+
+#
+
+![height: 80](./IMAGES/homotopy_isomorphism.png)
+
+Description visuelle de l’homotopie F.
+
+
+#
+
+**Démonstration (suite)**
+
+- On en déduit $[g \circ f \circ γ] = [\bar{u} ∗ γ ∗ u]$
+soit encore $(g_∗ \circ f_∗)([γ]) = \beta_u([\gamma])$
+pour tout $\gamma$.
+-  D’après la **Proposition 5**, l’application $\beta_u$ est un
+isomorphisme de groupes. On en déduit que $g_* \circ f_*$ est un
+isomorphisme de groupes.
+-  On montre que $f_∗ ∘ g_∗$ est un isomorphisme de groupes
+par un raisonnement similaire. $\blacksquare$
+
 
