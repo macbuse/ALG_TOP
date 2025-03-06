@@ -87,6 +87,19 @@ greg mc shane
 - [geometric group theory](https://en.wikipedia.org/wiki/Geometric_group_theory)
 ![bg left width:100%](./IMAGES/tree.jpeg)
 
+#
+
+
+![height:80%](./IMAGES/bouquet_circles.png)
+$\pi_1$ est un groupe libre.
+
+#
+
+
+![height:80%](./IMAGES/hawaian_earings.png)
+[hawaiian earings](https://fr.wikipedia.org/wiki/Boucle_d%27oreille_hawa%C3%AFenne) pas localement connexe,
+$\pi_1$ n'est pas  un groupe libre.
+
 
 # La concaténation des chemins
 
