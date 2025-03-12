@@ -56,13 +56,16 @@ greg mc shane
 
 ## Lacets et chemins
 
-**Hatcher Chapitre 0**
+**Hatcher pp 25-39**
 
 1. $X$ espace topologique, separé,  connexe par arcs, localement compact.
 1. $\pi_1(X, x_0) := \Omega(X, x_0)/ \simeq_\partial = 
 \text{lacets}/\text{homotopie}$
     1. $\tilde{X}$ espace recouvrant universel de $X$
     1. $X = \tilde{X}/\pi_1(X, x_0)$
+1. Exos :
+    - Hatcher pp 47 (pdf)
+    - [Borelli en francais](./exos_gpe_fonda.pdf)
 
 
 #
@@ -81,6 +84,10 @@ greg mc shane
 
 
 #
+
+- un **arbre** est un graphe acyclique et connexe
+- tout arbre est un CW complexe de dimension 1 contractile.
+
 
 ![height:150](./IMAGES/wedge2circles.png)
 - [Bass, Serre : arbres, amalgames et $sl_2$](http://www.numdam.org/item/AST_1983__46__1_0.pdf)
@@ -108,7 +115,7 @@ $\pi_1$ n'est pas  un groupe libre.
 - **Définition**.– Soit X un espace topologique et $x_0, x_1 \in X$. 
 - On appelle **chemin joignant** $x_0$ à $x_1$ tout application continue 
 $\gamma : [0, 1] \to X$ telle que $\gamma(0) = x_0$ et $\gamma(1) = x_1$.
-- On appelle LACET BASÉ EN $x_0$ tout chemin tel que
+- On appelle **lacet basé en** $x_0$ tout chemin tel que
 $\gamma(0) = \gamma(1) = x_0$.
 
 #
@@ -331,28 +338,22 @@ $$\pi_1(X, x_0) := \Omega(X, x_0)/ \simeq_\partial$$
 - Notons que l’on ne dit pas : "le groupe fondamental de la
 paire (X, x0)". Ceci est justifié par la proposition suivante.
 
-- **Proposition 5**.– Soit 
-$u : [0, 1] \to X$ un chemin joignant
-un chemin joignant $x_0$ à $x_1$.
-On note $x_0 := u(0)$ et 
-$x_1 := u(1)$. Alors, l’application
+- **Proposition 5**.– Soit $u : [0, 1] \to X$ un chemin joignant $x_0$ à $x_1$.
+On note $x_0 := u(0)$ et $x_1 := u(1)$. Alors, l’application
 $$\beta_u :\pi_1(X, x_0) \to \pi_1(X, x_1)$$
 $$[γ] \mapsto [\bar{u} ∗ γ ∗ u]$$
 - est isomorphisme de groupes.
 
-Démonstration ??
+Démonstration : admise
 
 
 #
 
-- **Corollaire 1**.– Soient X connexe par arcs et 
-$x_0, x_1 ∈ X$.
-
+- **Corollaire 1**.– Soient X connexe par arcs et $x_0, x_1 ∈ X$. 
 Alors $\pi_1(X, x0)$ et $\pi_1(X, x1)$ sont isomorphes.
 - **Observation.** En général, cet isomorphisme n’est pas
 canonique car $\beta_u$ dépend de la classe dans $L(X, x_0, x1)$ du
-chemin u choisi pour joindre 
-$x_0$ à $x_1$.
+chemin u choisi pour joindre $x_0$ à $x_1$.
 
 - **Définition.** Un espace topologique X est dit **simplement
 connexe** s’il est connexe par arcs et s’il existe 
@@ -363,15 +364,12 @@ $x_0 ∈ X$ tel que $\pi_1(X, x_0) = {[c_{x_0}]}$
 
 
 - **Remarque.**– D’après le corollaire 1, si X est simplement
-connexe, alors pour tout point x ∈ X, on a π1(X, x) = {[cx ]}.
+connexe, alors pour tout point $x \in X$, on a $\pi_1(X, x) = {[c_{x}]}$.
 
 
-- **Exemple 1.**– L’espace X = {x0} est simplement connexe.
+- **Exemple 1.**– L’espace $X = \{x_0\}$ est simplement connexe.
 - **Exemple 2.**– Tout espace contractile X est simplement
-connexe. L’homotopie joignant 
-$\gamma ∈ \Omega(X, x_0)$ à $c_{x_0}$ est induite
-par l’homotopie joignant 
-$id_X$ à la fonction constante $c_{x_0}: x\mapsto x_0$.
+connexe. L’homotopie joignant $\gamma ∈ \Omega(X, x_0)$ à $c_{x_0}$ est induite par l’homotopie joignant $id_X$ à la fonction constante $c_{x_0}: x\mapsto x_0$.
 
 <!-- idX à i ◦ r où i : {x0} ⊂ X et -->
 <!-- r : X → {x0}. -->
@@ -383,9 +381,8 @@ $id_X$ à la fonction constante $c_{x_0}: x\mapsto x_0$.
 et $x_0 ∈ X$ et $y_0 = f(x_0)$. On définit une application
 $$f_* : \pi_1(X, x_0) \to \pi_1(Y, y_0)$$
 $$f([\gamma]) := [f \circ \gamma].$$
-- cette application est bien définie car si $\gamma \simeq_\partial
-\delta$ alors 
-$f \circ \gamma \simeq_\partial f \circ \delta$.
+- cette application est bien définie 
+car si $\gamma \simeq_\partial \delta$ alors $f \circ \gamma \simeq_\partial f \circ \delta$.
 
 - **Proposition 6.**– L’application $f_∗$ est un morphisme de
 groupes.
