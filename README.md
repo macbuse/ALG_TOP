@@ -11,6 +11,10 @@ Imagination](https://arxiv.org/pdf/1804.03055)
     - Jeff Weeks, [The Shape of Space](https://www.cs.ubc.ca/~tmm/gc/supplements/ExploringTheShapeOfSpace.pdf)
     - John Stillwell, [Geometry of Surfaces](https://archive.org/details/geometryofsurfac0000stil/page/n235/mode/2up).
     - John Milnor [Topology from a differentiable viewpoint](https://math.uchicago.edu/~may/REU2017/MilnorDiff.pdf)
+
+- There are solutions to many exercises from Hatcher's book
+    - [here](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/).
+    - [and here](https://guanyulee.github.io/Hatcher.pdf)
 - As well as the web site [analysis situs](https://analysis-situs.math.cnrs.fr/).
 - Borelli tells me that
 [Topologicon](https://permamath.e-monsite.com/medias/files/petit-jean-pierre-le-topologicon.pdf) is very amusing and informative.
