@@ -39,10 +39,10 @@ Imagination](https://arxiv.org/pdf/1804.03055)
     - [complexes simpliciaux](./exos_simplicial.pdf)
     - [homotopie](./exos_homotopy.pdf)
     - [groupe fondamental](./exos_gpe_fonda.pdf)
-1. The circle and Brouwer's fixed point theorem
-1. Van Kampen
-1. Zoology of fundamental groups
-1. Covering spaces
-1. Lifting maps
+1. [Lifting maps Fundamental group](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/lifting.html)
+<!-- 1. The circle and Brouwer's fixed point theorem -->
+<!-- 1. Van Kampen -->
+<!-- 1. Zoology of fundamental groups -->
+<!-- 1. Covering spaces -->
 1. More on covering spaces
 
