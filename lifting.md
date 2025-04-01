@@ -121,16 +121,12 @@ $\Box$
 
 
 ### Relèvements des chemins
-
-- **Définition**.– 
-Soient p un revêtement et f : Y → B une application continue. 
-Un **relèvement** de f est toute application continue 
+- **Définition**.– Soient p un revêtement et f : Y → B une application continue. Un **relèvement** de f est toute application continue 
 $\tilde{f} : Y \to E$ telle que $p \circ \tilde{f} = f.$
-• On a déjà rencontré la notion de relèvement dans le cas
-particulier du revêtement $p : \mathbb{R} \to \mathbb{S}^1$ 
-<!-- Grâce à la propriété de relèvement, nous avions déterminé le groupe fondamental de $\mathbb{S}^1$. -->
-- Nous allons généraliser cette propriété de relèvement à
-tous les revêtements.
+
+![height:200](./IMAGES/revetement.png)
+-  On a déjà rencontré la notion de relèvement dans le cas particulier du revêtement $p : \mathbb{R} \to \mathbb{S}^1$ 
+- Nous allons généraliser cette propriété de relèvement 
 
 
 #
@@ -236,8 +232,7 @@ Et ainsi de suite.
 
 - Supposons que $\tilde{\gamma}_1$ et $\tilde{\gamma}_2$ soient deux relèvements
 tels que $\tilde{\gamma}_1(0) = \tilde{\gamma}_2(0)$
-alors 
-$0\in S:= \{s ∈ [0, 1] | \tilde{\gamma}_1(s) = \tilde{\gamma}_2(s)\} \neq \emptyset$
+alors $0\in S:= \{s ∈ [0, 1] | \tilde{\gamma}_1(s) = \tilde{\gamma}_2(s)\} \neq \emptyset$
 <br>
 D’après le lemme, l’ensemble S est donc $[0, 1]$ ce qui entraîne 
 que $\tilde{\gamma}_1(s) = \tilde{\gamma}_2(s)$ pour tout s ∈ [0, 1] 
