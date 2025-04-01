@@ -163,36 +163,27 @@ $\phi : Y \to  E \times E$ $y \mapsto (\tilde{f}_1(y), \tilde{f}_2(y))$.
 
 #
 
-Rappelons que
-$\Delta_E$ est fermé $\Leftrightarrow$ E est séparé
-et que l’espace total E est toujours implicitement supposé séparé. On en déduit que S est fermé puisque $\phi$ est
+- Rappelons que 
+    - $\Delta_E$ est fermé $\Leftrightarrow$ E est séparé
+    - l’espace total E est toujours implicitement supposé séparé. 
+    - On en déduit que S est fermé puisque $\phi$ est
 continue.
-• Montrons que S est ouvert. Soit 
-$y\in S$ et $b = f(y)$
+-  Montrons que S est ouvert. Soit $y\in S$ et $b = f(y)$
 Il existe un ouvert U contenant b qui est trivialisant,
 c’est-à-dire tel que
-
-$p^{-1}(U) = \sqcup_{\alpha \in A} V_\alpha$ 
-
-Il existe donc un indice α(y) tel que 
+    - $p^{-1}(U) = \sqcup_{\alpha \in A} V_\alpha$ 
+    - Il existe donc un indice α(y) tel que 
 $\tilde{f}_1(y) = \tilde{f}_2(y) \in V_\alpha$.
 
 #
 
-- Par continuité, il existe un voisinage 
-$U' \subset U$ tel que
-
+- Par continuité, il existe un voisinage $U' \subset U$ tel que
 $\forall y' \in U', \tilde{f}_1(y') \in V_\alpha$ existe
 
-- Puisque 
-$\tilde{f}_1$ et $\tilde{f}_2$ sont des relèvements de f, on a
-
-$\forall y' \in U', p(\tilde{f}_1(y')) = p(\tilde{f}_2(y')) =
-f(y')$.
-- Comme l’application 
-p restreinte à $V_\alpha(y)$ est bijective sur
-son image U, on a pour tout 
-$\forall y' \in U', p(\tilde{f}_1(y')) = p(\tilde{f}_2(y'))$.
+- Puisque $\tilde{f}_1$ et $\tilde{f}_2$ sont des relèvements de f, on a
+$\forall y' \in U', p(\tilde{f}_1(y')) = p(\tilde{f}_2(y')) = f(y')$.
+- Comme l’application p restreinte à $V_\alpha(y)$ est bijective 
+sur son image U, on a pour tout $\forall y' \in U', p(\tilde{f}_1(y')) = p(\tilde{f}_2(y'))$.
 $\Rightarrow ( p|V_\alpha(y))^{-1} \circ p \circ \tilde{f}_1(y') =
 ( p|V_\alpha(y))^{-1} \circ p \circ \tilde{f}_2(y')$.
 $\Rightarrow \tilde{f}_1(y') = \tilde{f}_2(y')$.
@@ -216,68 +207,42 @@ $[0, 1] = \sqcup_{b \in A} \gamma^{-1}(U_b)$
 
 #
 
-- Puisque $[0, 1]$ est compact (et évidemment métrique), par
-le lemme de Lebesgue (cf. la leçon TA5 consacrée au
-théorème de Van Kampen) il existe une subdivision
-
-
-$[0, 1] =
-\sqcup_{n=0}^{N−1} I_n$
-avec 
-$I_n = [\frac{n}{N}, \frac{n + 1}{N}]$
+- Puisque $[0, 1]$ est compact (et évidemment métrique), par le lemme de Lebesgue )
+- il existe une subdivision $[0, 1] = \sqcup_{n=0}^{N−1} I_n$ avec $I_n = [\frac{n}{N}, \frac{n + 1}{N}]$
 pour laquelle, pour tout n, il existe p(n) ∈ B telle que
-$\gamma(I_n) \subset U_n$ 
-où $U_n:= U_{p(n)}$
+$\gamma(I_n) \subset U_n$ où $U_n:= U_{p(n)}$
 
-• On va définir 
-$\tilde{\gamma}$ sur chaque intervalle $I_n$ 
-n ∈ {0, ..., N − 1}. Commençons par 
-$I_0 = [0, \frac{1}{N}]$.
-• Notons 
-$V^0_\alpha$
- les ouverts au dessus de $U_0$ et:
-$p^{-1}(U_0) = \sqcup_{\alpha \in A} V^0_\alpha$.
+-  On va définir $\tilde{\gamma}$ sur chaque intervalle $I_n$ n ∈ {0, ..., N − 1}. 
+Commençons par $I_0 = [0, \frac{1}{N}]$.
+-  Notons $V^0_\alpha$ les ouverts au dessus de $U_0$ et: $p^{-1}(U_0) = \bigsqcup_{\alpha \in A} V^0_\alpha$.
 
 #
 
- Puisque $γ(I_0) ⊂ U_0$, on a nécessairement 
-$b_0 = \gamma(0) \in U_0$ et
-et donc il existe un indice 
-$\alpha_0$
-tel que 
-$x_0 \in V^0_{\alpha_0}$ 
-.
-• La définition d’un revêtement implique que l’application
+- Puisque $γ(I_0) ⊂ U_0$, on a nécessairement 
+$b_0 = \gamma(0) \in U_0$ et donc il existe un indice 
+$\alpha_0$ tel que $x_0 \in V^0_{\alpha_0}$ 
+-  La définition d’un revêtement implique que l’application
 $p|V^0_{\alpha_0} : V^0_{\alpha_0} \to U_0$ est un homéomorphisme.
 
- Définissons 
-$\tilde{\gamma}$ sur I0 par
- γe sur I0 en posant
-$\forall s ∈ I0, \tilde{\gamma}(s) := p|V^0_{\alpha_0} −1
-\circ γ.$
--  Par construction, 
-$p  \circ \tilde{\gamma} = \gamma$
+ - **Définissons** $\tilde{\gamma}$ sur $I_0$ en posant 
+ $\forall s\in I_0,\tilde{\gamma}(s) :=p|V^0_{\alpha}$ $^{-1}\circ \gamma.$
+-  Par construction, $p  \circ \tilde{\gamma} = \gamma$
 et donc $\tilde{\gamma}$ est un relèvement de γ sur $I_0$.
 -  On poursuit sur $I_1$ en considérant 
-$b_1 := \gamma(\frac{1}{N}) ⊂ U_1$ et
-$x_1 := \tilde{\gamma}(\frac{1}{N})$
-pour prolonger $\tilde{\gamma}$ sur $I_1$.
+$b_1 := \gamma(\frac{1}{N}) ⊂ U_1$ et $x_1 := \tilde{\gamma}(\frac{1}{N})$ pour prolonger $\tilde{\gamma}$ sur $I_1$.
 Et ainsi de suite.
 
 #
 
-- Supposons que 
-$\tilde{\gamma}_1$ et $\tilde{\gamma}_2$ soient deux relèvements
-tels que
-$\tilde{\gamma}_1(0) = \tilde{\gamma}_2(0)$
-alors <br> 
+- Supposons que $\tilde{\gamma}_1$ et $\tilde{\gamma}_2$ soient deux relèvements
+tels que $\tilde{\gamma}_1(0) = \tilde{\gamma}_2(0)$
+alors 
 $0\in S:= \{s ∈ [0, 1] | \tilde{\gamma}_1(s) = \tilde{\gamma}_2(s)\} \neq \emptyset$
 <br>
-D’après le lemme,
-l’ensemble S est donc $[0, 1]$ ce qui entraîne que 
-$\tilde{\gamma}_1(s) = \tilde{\gamma}_2(s)$ pour tout s ∈ [0, 1] et
-- La démonstration du point b) est tout à fait similaire. Elle est laissée en exercice.
-$\Box$
+D’après le lemme, l’ensemble S est donc $[0, 1]$ ce qui entraîne 
+que $\tilde{\gamma}_1(s) = \tilde{\gamma}_2(s)$ pour tout s ∈ [0, 1] 
+- La démonstration du point **b)** est tout à fait similaire. 
+Elle est laissée en exercice. $\Box$
 
 
 # Revetements et groupes fondamentaux
