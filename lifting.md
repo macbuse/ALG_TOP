@@ -56,6 +56,7 @@ greg mc shane
 
 **Hatcher Chapitre 1.3**
 
+- Rappels
 - Lemme de Lebesgue
 - Lemme de coïncidence
 - Propriété de relèvement des applications
@@ -71,10 +72,10 @@ constitué des classes de lacets de B, basés en $b_0$,
 et dont les relèvements sont des lacets de E.
 
 
-# Homotopies d'applications
+# 
 
 
-#
+### Homotopies d'applications
 
 - **Définition**.– Soient X et Y deux espaces topologiques et
 $f, g : X \to Y$ deux applications continues. 
@@ -89,12 +90,17 @@ de plus
 
 #
 
+<!-- _transition: glow -->
 
 - **On définit** une relation binaire $\simeq$  dans 
 $C^0(X, Y)$ par $f \simeq g \Leftrightarrow$ il existe une homotopie entre f et g
 - Similairement, $f \simeq_A g$ si l’homotopie est relative à A.
 
 
+
+# Relèvements des chemins
+
+<!-- _transition: cube -->
 
 #
 
@@ -218,21 +224,20 @@ Commençons par $I_0 = [0, \frac{1}{N}]$.
 
 #
 
-- Puisque $γ(I_0) ⊂ U_0$, on a nécessairement 
-$b_0 = \gamma(0) \in U_0$ et donc il existe un indice 
-$\alpha_0$ tel que $x_0 \in V^0_{\alpha_0}$ 
+- Puisque $γ(I_0) ⊂ U_0$, on a nécessairement $b_0 = \gamma(0) \in U_0$ 
+et donc il existe un indice $\alpha_0$ tel que $x_0 \in V^0_{\alpha_0}$ 
 -  La définition d’un revêtement implique que l’application
 $p|V^0_{\alpha_0} : V^0_{\alpha_0} \to U_0$ est un homéomorphisme.
 
- - **Définissons** $\tilde{\gamma}$ sur $I_0$ en posant 
- $\forall s\in I_0,\tilde{\gamma}(s) :=p|V^0_{\alpha}$ $^{-1}\circ \gamma.$
+ - **Définissons** $\tilde{\gamma}$ sur $I_0$ en posant $\forall s\in I_0,\tilde{\gamma}(s) :=p|V^0_{\alpha}$ $^{-1}\circ \gamma.$
 -  Par construction, $p  \circ \tilde{\gamma} = \gamma$
 et donc $\tilde{\gamma}$ est un relèvement de γ sur $I_0$.
 -  On poursuit sur $I_1$ en considérant 
-$b_1 := \gamma(\frac{1}{N}) ⊂ U_1$ et $x_1 := \tilde{\gamma}(\frac{1}{N})$ pour prolonger $\tilde{\gamma}$ sur $I_1$.
-Et ainsi de suite.
+$b_1 := \gamma(\frac{1}{N}) ⊂ U_1$ et $x_1 := \tilde{\gamma}(\frac{1}{N})$ 
+pour prolonger $\tilde{\gamma}$ sur $I_1$. Et ainsi de suite.
 
 #
+<!-- _transition: glow -->
 
 - Supposons que $\tilde{\gamma}_1$ et $\tilde{\gamma}_2$ soient deux relèvements
 tels que $\tilde{\gamma}_1(0) = \tilde{\gamma}_2(0)$
@@ -245,6 +250,8 @@ Elle est laissée en exercice. $\Box$
 
 
 # Revetements et groupes fondamentaux
+
+<!-- _transition: cube -->
 
 #
 
