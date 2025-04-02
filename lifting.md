@@ -56,6 +56,20 @@ greg mc shane
 
 **Hatcher Chapitre 1.3**
 
+- Lemme de Lebesgue
+- Lemme de coïncidence
+- Propriété de relèvement des applications
+- Theorème de l’injectivité de $p_∗$
+
+#
+
+- **Théorème de l’injectivité de $p_∗$**  
+Soit $p : (E, x_0) → (B,b_0)$ un revêtement. 
+    - L’application induite $p_∗ : \pi_1(E, x_0) \to \pi_1(B, b_0)$ est injective. 
+    - Le sous-groupe image $p_∗(\pi_1(E, x_0))$ est
+constitué des classes de lacets de B, basés en $b_0$, 
+et dont les relèvements sont des lacets de E.
+
 
 # Homotopies d'applications
 
