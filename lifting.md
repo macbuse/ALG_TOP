@@ -57,16 +57,6 @@ greg mc shane
 **Hatcher Chapitre 1.3**
 
 
-#
-
-## Idée
-
-- homotopie = chemin continu qui relie 
-deux fonctions continues ($f \simeq g$)
-- $[X,Y]:= (C^0(X, Y)/\simeq)$ est l'ensemble des classes d'homotopie
--  = composante connexe par arc de $C^0(X, Y)$
-
-
 # Homotopies d'applications
 
 
@@ -244,21 +234,16 @@ Elle est laissée en exercice. $\Box$
 
 #
 
-**Théorème de l’injectivité de $p_∗$** – 
-Soit 
+- **Théorème de l’injectivité de $p_∗$** – 
+Soit $p : (E, x_0) → (B,b_0)$ un revêtement. 
+    - L’application induite $p_∗ : \pi_1(E, x_0) \to \pi_1(B, b_0)$ est injective. 
+    - Le sous-groupe image $p_∗(\pi_1(E, x_0))$ est
+constitué des classes de lacets de B, basés en $b_0$, 
+et dont les relèvements sont des lacets de E.
 
-$p : (E, x_0) → (B,^ b_0)$
-un revêtement. L’application induite
-$p_∗ : \pi_1(E, x_0) \to \pi_1(B, b_0)$
-est injective. Le sous-groupe image $p_∗(\pi_1(E, x_0))$ est
-constitué des classes de lacets de B, basés en $b_0$, et dont
-les relèvements sont des lacets de E.
-
-
-Observation.– Ce théorème est très surprenant car on a
+- **Observation**.– Ce théorème est très surprenant car on a
 construit des revêtements dont le groupe fondamental de
-l’espace total E semble bien plus gros que celui de la base
-B. 
+l’espace total E semble bien plus gros que celui de la base B. 
 
 Par exemple, si E est la triple boucle et B est le bouquet $S^1
 \wedge
@@ -266,68 +251,44 @@ S^1$ alors $\pi_1(E) = \mathbb{Z}*\mathbb{Z}*\mathbb{Z}$ et $\pi_1(B) = \mathbb{
 
 #
 
-**Démonstration du théorème de l’injectivité** de $p_∗$ – Soit
-$\tilde{\gamma} : [0, 1] → E$ un lacet basé en $x_0$ tel que
-$p_∗([\tilde{\gamma}]) = [c_{b_0}]$.
-].
+- **Démonstration du théorème de l’injectivité** de $p_∗$ 
+Soit $\tilde{\gamma} : [0, 1] → E$ un lacet basé en $x_0$ tel que
+$p_∗([\tilde{\gamma}]) = [c_{b_0}]$. 
 
-- Cela signifie que 
-$\gamma = p \circ \tilde{\gamma}$
-homotope à $c_{b_0}$ dans B.
-Soit 
-$H : [0, 1]^2 → B$ une homotopie de lacets basés en $b_0$
-telle que 
-$H(0, ·) = \gamma$ et $H(1, ·) = b_0$.
+- Cela signifie que $\gamma = p \circ \tilde{\gamma}$ homotope à $c_{b_0}$ dans B.
+Soit $H : [0, 1]^2 → B$ une homotopie de lacets basés en $b_0$
+telle que $H(0, ·) = \gamma$ et $H(1, ·) = b_0$.
 -  D’après la propriété de relèvement, il existe une
-homotopie 
-$H : [0, 1]^2 → E$ telle que
-$p \circ \tilde{H} = H$ et
-$H(0, ·) = \tilde{\gamma}$ et
-$H(1, ·) = \tilde{c}_{x_0}$.
+homotopie $H : [0, 1]^2 → E$ telle que
+$p \circ \tilde{H} = H$ et $H(0, ·) = \tilde{\gamma}$ et $H(1, ·) = \tilde{c}_{x_0}$.
 où $\tilde{c}_{x_0}$ est le relevé du lacet constant.
 
 #
 
-• Montrons que les chemins
-
-$s\mapsto \tilde{\gamma}(s) := \tilde{H}(1, s)$
+- Montrons que les chemins $s\mapsto \tilde{\gamma}(s) := \tilde{H}(1, s)$
 sont des lacets basés en $x_0$. En effet, l’application
-$t \mapsto \tilde{H}(t, 1)$ 
-est continue à valeur dans l’espace discret 
-$F_{b_0} := p^{-1} (b_0).$
-Elle est donc constante. Puisque 
-$\tilde{\gamma}(1) = \tilde{H}(1, 0) = \tilde{H}(1, 1) = x_0$,
+$t \mapsto \tilde{H}(t, 1)$ est continue à valeur dans l’espace discret 
+$F_{b_0} := p^{-1} (b_0).$ Elle est donc constante. 
+Puisque $\tilde{\gamma}(1) = \tilde{H}(1, 0) = \tilde{H}(1, 1) = x_0$,
 c’est donc que tous les γet sont des lacets basés en $x_0$.
-- Or le chemin constant $c_{x_0}$
-est un relevé de $c_{b_0}$ 
--  Par unicité
-du relèvement 
-$\tilde{c}_{b_0} = \tilde{H}(1, ·) = c_{x_0}$ 
-- Donc 
-$\tilde{\gamma}$ est homotope à $c_{x_0}$ dans E.
-et donc $[\tilde{\gamma}]$ est l’élément neutre
-du $\pi_1(E, x_0)$ et $p_*$ est injectif.
+- Or le chemin constant $c_{x_0}$ est un relevé de $c_{b_0}$ 
+-  Par unicité du relèvement $\tilde{c}_{b_0} = \tilde{H}(1, ·) = c_{x_0}$ 
+- Donc $\tilde{\gamma}$ est homotope à $c_{x_0}$ dans E
+et donc $[\tilde{\gamma}]$ est l’élément neutre du $\pi_1(E, x_0)$ et $p_*$ est injectif.
 
 #
 
 - Supposons maintenant que $p_∗([\delta]) = [\gamma]$ avec $\delta
 \in \Omega(E,x_0)$ et $\gamma \in \Omega(B, b_0)$.
-Par conséquent p ◦ δ et γ sont homotopes
-dans B.
+Par conséquent p ◦ δ et γ sont homotopes dans B.
 - Le relèvement de cette homotopie fournit une homotopie
-$\tilde{H}$ entre 
-$\tilde{H}(0, s) = \delta(s)$ et $\tilde{\gamma}:= \tilde{H}(1, s)$
-- Notons 
-$\delta_t:= \tilde{H}(t, ·)$ pour t ∈ [0, 1].
-ainsi $\delta_0 = \delta$ et $\delta_1 = \tilde{\gamma}$.
-Pour une raison
-similaire à celle développée plus haut, les chemins δt sont en fait des lacets basés en $x_0$. En particulier 
-$\tilde{\gamma}$ est en un
-lacet.
-- Réciproquement, 
-si $\tilde{\gamma}$ est un lacet basé en $x_0$  son 
-image 
-$\gamma = p \circ \tilde{\gamma}$ est un lacet basé en $b_0$.
+$\tilde{H}$ entre $\tilde{H}(0, s) = \delta(s)$ et $\tilde{\gamma}:= \tilde{H}(1, s)$
+- Notons $\delta_t:= \tilde{H}(t, ·)$ pour t ∈ [0, 1]. ainsi $\delta_0 = \delta$ et $\delta_1 = \tilde{\gamma}$.
+Pour une raison similaire à celle développée plus haut,
+les chemins $\delta_t$ sont en fait des lacets basés en $x_0$. 
+En particulier $\tilde{\gamma}$ est en un lacet.
+- Réciproquement, si $\tilde{\gamma}$ est un lacet basé en $x_0$  
+son image $\gamma = p \circ \tilde{\gamma}$ est un lacet basé en $b_0$. $\Box$
 
 
 #
