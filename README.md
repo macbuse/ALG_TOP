@@ -42,7 +42,10 @@ Imagination](https://arxiv.org/pdf/1804.03055)
 1. [Lifting maps Fundamental group](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/lifting.html)
     - [Exos](./exos_chemins.pdf)
 1. [Correspondence galoisienne](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/galois.html)
-<!-- 1. The circle and Brouwer's fixed point theorem -->
+1. [Brouwer's fixed point
+   theorem](https://math.univ-lyon1.fr/homes-www/borrelli/Espace_etudiant/Pdf_TA/CM-TA4.pdf)
+   - [Exos](./exos_brouwer.pdf)
+
 <!-- 1. Van Kampen -->
 <!-- 1. Zoology of fundamental groups -->
 <!-- 1. Covering spaces -->
