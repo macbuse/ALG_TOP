@@ -1,0 +1,25 @@
+- **Définition** Un polyèdre convexe est un **solide de Platon** 
+- **Définition :** une application $f:X \to Y$ est **nul homotope** 
+- **Définition.** Un espace topologique X est dit *localement
+- **Définition**.– L’espace quotient est noté Y/A et est appelé espace quotient de $Y$ par $A$.
+- **Définition**– L’espace quotient est noté $X \cup_f Y = X \sqcup Y/∼$
+- **Définition.** Un espace topologique X est dit **localement
+- **Définition** $X$ est connexe $\text{card}(p^{-1}(x))=$  degré du revêtement.
+- **Définition**.– L’espace quotient est noté Y/A 
+- **Définition**– L’espace quotient est noté $X \cup_f Y = X \sqcup Y/∼$
+- **Définition.** Soit $f : X \rightarrow X$ un homéomorphisme.
+# Définition $n$-simplexe
+### Définition : Complexe simplicial  
+- **Définition**.– Si $\sup \{\text{dim } \sigma_\alpha\} = k < +\infty$ 
+- **Définition.**– Étant donnés deux espaces pointés 
+- **Définition**.– Un CW -COMPLEXE X est un espace topologique
+- **Définition**.– Soient X et Y deux espaces topologiques et
+- **Définition.** Soit $f \in C^0 (X, Y).$ On dit que f est 
+- **Définition.**– Soit $i : A \hookrightarrow X$ une inclusion, $r \in C^0 (X, A)$ est 
+- **Définition.** -  On dit qu’un espace X est CONTRACTILE s’il a
+- **Définition**.– Soit X un espace topologique et $x_0, x_1 \in X$. 
+- **Définition.–** On dit qu’un espace topologique X est
+- **Définition.** Un espace topologique X est dit **simplement
+- **Définition**.– Soient X et Y deux espaces topologiques et
+- **Définition**.– Soient p un revêtement et f : Y → B une application continue. Un **relèvement** de f est toute application continue 
+- Définition : **semilocalement simplement connexe** : 

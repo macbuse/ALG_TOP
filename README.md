@@ -3,6 +3,9 @@
 This is the repository for the course [Algebraic Topology](https://analysis-situs.math.cnrs.fr/Qu-est-ce-que-la-topologie-algebrique.html) 2024 at the
 Institut Fourier, Grenoble. 
 
+- [Here is a list of definitions](./Defs.md)
+- 
+
 - The course will blatantly  borrow from [Vincent Borelli'spaces course](https://math.univ-lyon1.fr/homes-www/borrelli/Espace_etudiant/).
 - But I am mostly motivated by [Conway and Thurston's Geometry and
 Imagination](https://arxiv.org/pdf/1804.03055) 
