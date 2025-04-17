@@ -24,6 +24,7 @@ Imagination](https://arxiv.org/pdf/1804.03055)
 
 ### Slides
 
+cat intro.md gauss_dalembert.md revetements.md quotients.md simp.md homotop.md gpe_fonda.md lifting.md galois.md > all.md
 
 1. [Introduction](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/intro.html)
 1.   [D'alembert Gauss : homotopies](https://htmlpreview.github.io/?https://github.com/macbuse/ALG_TOP/blob/master/gauss_dalembert.html)

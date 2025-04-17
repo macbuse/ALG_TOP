@@ -1,3 +1,5 @@
+#! /home/macbuse/miniconda3/bin/python3.11
+
 import plotly.graph_objects as go
 import numpy as np
 # Generate curve data
