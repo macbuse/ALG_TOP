@@ -4,7 +4,7 @@ This is the repository for the course [Algebraic Topology](https://analysis-situ
 Institut Fourier, Grenoble. 
 
 - [Here is a list of definitions](./Defs.md)
-- 
+- [List of propositions etc](./thms.md)
 
 - The course will blatantly  borrow from [Vincent Borelli'spaces course](https://math.univ-lyon1.fr/homes-www/borrelli/Espace_etudiant/).
 - But I am mostly motivated by [Conway and Thurston's Geometry and
